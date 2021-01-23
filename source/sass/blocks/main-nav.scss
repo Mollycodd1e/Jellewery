@@ -1,0 +1,142 @@
+.main-nav {
+  position: relative;
+  max-width: 1366px;
+  padding-top: 30px;
+  padding-right: 98px;
+  padding-left: 98px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.main-nav::after {
+  content: "";
+
+  position: absolute;
+  bottom: 73px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f6f5f4;
+}
+
+.main-nav__form-wrapper {
+  padding-top: 15px;
+}
+
+.main-nav__form-wrapper form {
+  position: relative;
+  width: 309px;
+}
+
+.main-nav__form-wrapper button {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-nav__form-wrapper button:hover,
+.main-nav__form-wrapper button:focus {
+  background-color:  #a87b62;
+  fill: #ffffff;
+}
+
+.main-nav__form-wrapper input {
+  padding-left: 29px;
+  height: 24px;
+  border: none;
+  width: 100%;
+  font-family: $poppins;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main-nav__form-wrapper input:hover,
+.main-nav__form-wrapper input:focus {
+  background-color: #a87b62;
+}
+
+.main-nav__form-wrapper input::placeholder {
+  font-family: $poppins;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.main-nav__form-wrapper input:hover::placeholder,
+.main-nav__form-wrapper input:focus::placeholder {
+  color: #ffffff;
+}
+
+.main-nav__logo {
+  display: block;
+  margin: 0 auto;
+  width: 66px;
+  height: 66px;
+}
+
+.main-nav__user-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
+  font-family: $poppins;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: auto;
+}
+
+.main-nav__user-list li {
+  margin-right: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.main-nav__user-list li:hover,
+.main-nav__user-list li:focus {
+  color: #a87b62;
+}
+
+.main-nav__user-list li:nth-child(2n + 2) {
+  margin-right: 0;
+}
+
+.main-nav__user-list span {
+  margin-left: 7px;
+}
+
+.main-nav__menu-list-wrapper {
+  width: 100%;
+}
+
+.main-nav__menu-list {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 24px;
+  width: 493px;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.main-nav__menu-list li {
+  margin-right: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.main-nav__menu-list li:hover,
+.main-nav__menu-list li:focus {
+  color: #a87b62;
+}
+
+.main-nav__menu-list li:nth-child(5n + 5) {
+  margin-right: 0;
+}

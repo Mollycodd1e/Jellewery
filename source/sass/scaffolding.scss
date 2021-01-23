@@ -9,17 +9,13 @@ body {
   padding: 0;
 
   font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  font-family: "PTMono", "Arial", sans-serif;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
-  color: #011c40;
+  color: #1d1613;
 
   background-color: #ffffff;
-}
-
-.scroll-hidden {
-  overflow: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active),

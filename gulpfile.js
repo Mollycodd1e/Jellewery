@@ -16,7 +16,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var concat = require("gulp-concat");
 var del = require("del");
-require("imask");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -94,8 +93,6 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source//*.ico",
-    "source/js/vendor/imask.min.js",
-    "source/js/utils.js"
     ], {
       base: "source"
     })
