@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -15,6 +16,22 @@ body {
   color: #1d1613;
 
   background-color: #ffffff;
+  height: 100%;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  height: 100%;
+  flex: 1 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
