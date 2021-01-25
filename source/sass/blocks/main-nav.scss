@@ -1,5 +1,4 @@
 .main-nav {
-  position: relative;
   max-width: 1366px;
   margin: 0 auto;
   padding-top: 30px;
@@ -181,8 +180,8 @@
 
 @media (max-width: $tablet-width-only) {
   .main-nav {
-    padding-right: 44px;
-    padding-left: 45px;
+    //padding-right: 44px;
+    //padding-left: 45px;
   }
 
   .main-nav::after {
@@ -271,9 +270,14 @@
 
   .main-nav--opened {
     width: 100%;
+    left: 0;
+    top: 0;
     position: absolute;
     min-height: 778px;
+    padding-left: 7.2%;
+    padding-right: 7.2%;
     background-color: #a87b62;
+    z-index: 100;
   }
 
   .main-nav--opened .main-nav__toggle {
