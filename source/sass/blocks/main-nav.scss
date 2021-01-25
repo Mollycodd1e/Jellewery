@@ -97,8 +97,10 @@
   height: 66px;
 }
 
-.main-nav__logo path {
+.main-nav__logo svg {
   fill: #a87b62;
+  width: 66px;
+  height: 66px;
 }
 
 .main-nav__contact-list {
@@ -122,18 +124,18 @@
   color: #1d1613;
 }
 
-.main-nav__user-list li {
+.main-nav__user-item {
   margin-right: 35px;
   margin-bottom: 5px;
   cursor: pointer;
 }
 
-.main-nav__user-list li:hover,
-.main-nav__user-list li:focus {
+.main-nav__user-item:hover a,
+.main-nav__user-item:focus a {
   color: #a87b62;
 }
 
-.main-nav__user-list li:nth-child(2n + 2) {
+.main-nav__user-item:nth-child(2n + 2) {
   margin-right: 0;
 }
 
@@ -163,27 +165,22 @@
   color: #1d1613;
 }
 
-.main-nav__menu-list li {
+.main-nav__menu-item {
   margin-right: 35px;
   margin-bottom: 5px;
   cursor: pointer;
 }
 
-.main-nav__menu-list li:hover,
-.main-nav__menu-list li:focus {
+.main-nav__menu-item:hover a,
+.main-nav__menu-item:focus a {
   color: #a87b62;
 }
 
-.main-nav__menu-list li:nth-child(5n + 5) {
+.main-nav__menu-item:nth-child(5n + 5) {
   margin-right: 0;
 }
 
 @media (max-width: $tablet-width-only) {
-  .main-nav {
-    //padding-right: 44px;
-    //padding-left: 45px;
-  }
-
   .main-nav::after {
     display: none;
   }
@@ -236,12 +233,17 @@
     left: 6px;
   }
 
+  .main-nav--closed svg {
+    fill: none;
+  }
+
+  .main-nav--opened svg {
+    fill: none;
+  }
+
   .main-nav__form-wrapper svg {
     width: 16px;
     height: 16px;
-  }
-
-  .main-nav__form-wrapper path {
     fill: #ffffff;
   }
 
@@ -260,12 +262,8 @@
     align-self: center;
   }
 
-  .main-nav--closed svg {
-    fill: none;
-  }
-
-  .main-nav--opened svg {
-    fill: none;
+  .main-nav__logo svg {
+    fill: #a87b62;
   }
 
   .main-nav--opened {
@@ -294,6 +292,14 @@
     display: block;
     margin-top: 4px;
     align-self: center;
+  }
+
+  .main-nav__cart-svg svg {
+    stroke: #1d1613;
+  }
+
+  .main-nav--opened .main-nav__cart-svg svg {
+    stroke: #ffffff;
   }
 
   .main-nav--opened .main-nav__form-wrapper {
@@ -407,18 +413,19 @@
       0 16px 0  #ffffff;
   }
 
-  .main-nav--opened .main-nav__logo path {
+  .main-nav--opened .main-nav__logo svg {
     fill: #ffffff;
-  }
-
-  .main-nav--opened .main-nav__cart-svg path {
-    stroke: #ffffff;
   }
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav {
-    padding-right: 15px;
-    padding-left: 15px;
+  .main-nav__logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .main-nav__logo svg {
+    width: 52px;
+    height: 52px;
   }
 }
