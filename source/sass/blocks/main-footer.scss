@@ -203,12 +203,20 @@
   cursor: pointer;
 }
 
+.main-footer__social-link svg {
+  fill: #ffffff;
+}
+
 .main-footer__social-link:hover,
 .main-footer__social-link:focus {
   color: #a87b62;
 }
 
-.main-footer__social-link:hover path,
-.main-footer__social-link:focus path {
+.main-footer__social-item:hover svg,
+.main-footer__social-item:focus svg {
   fill: #a87b62;
+}
+
+@media (max-width: $tablet-width-only) {
+
 }
