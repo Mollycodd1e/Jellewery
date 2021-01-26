@@ -1,0 +1,72 @@
+.main-title {
+  position: relative;
+  background-color: #a87b62;
+  background-image: url("../img/intro-index-desktop.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 463px;
+}
+
+.main-title__wrapper {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  width: 286px;
+  margin-left: -143px;
+}
+
+.main-title__wrapper h2 {
+  margin: 0;
+  font-family: $cormorant-garamond;
+  font-size: 45px;
+  line-height: 58px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-title__wrapper p {
+  margin: 0;
+  margin-top: -5px;
+  font-family: $cormorant-garamond;
+  font-size: 38px;
+  line-height: 49px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-title {
+    background-image: url("../img/intro-index-tablet.jpg");
+  }
+
+  .main-title__wrapper {
+    margin-left: -152px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-title {
+    background-image: url("../img/intro-index-mobile.jpg");
+  }
+
+  .main-title__wrapper {
+    margin-left: -143px;
+    top: 40.8%;
+  }
+
+  .main-title__wrapper h2 {
+    font-size: 38px;
+    line-height: 49px;
+    text-align: center;
+  }
+
+  .main-title__wrapper p {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
