@@ -1,0 +1,95 @@
+.main-faq {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.main-faq h2 {
+  margin: 0;
+  font-family: $cormorant-garamond;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.main-faq__wrapper {
+  width: 970px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.main-faq__wrapper div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 44px;
+  padding-bottom: 42px;
+  padding-left: 39px;
+  padding-right: 46px;
+  border: 1px solid #a87b62;
+}
+
+.main-faq__wrapper div:nth-child(4n + 2),
+.main-faq__wrapper div:nth-child(4n + 3),
+.main-faq__wrapper div:nth-child(4n + 4) {
+  border-top: none;
+}
+
+.main-faq__wrapper button {
+  position: relative;
+  border: none;
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.main-faq__wrapper button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 10px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: #a87b62;
+}
+
+.main-faq__wrapper button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 10px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-color: #a87b62;
+}
+
+.main-faq__wrapper h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1d1613;
+}
+
+//.main-faq__material-wrapper p,
+.main-faq__delivery-wrapper p,
+.main-faq__payment-wrapper p,
+.main-faq__return-wrapper p {
+  display: none;
+  width: 100%;
+  margin: 0;
+  margin-top: 7px;
+  padding-left: 10px;
+  padding-right: 350px;
+}
+
+.main-faq__material-wrapper p {
+  width: 100%;
+  margin: 0;
+  margin-top: 7px;
+  padding-left: 10px;
+  padding-right: 350px;
+}

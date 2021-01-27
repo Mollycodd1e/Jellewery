@@ -1,0 +1,130 @@
+.main-blog {
+  padding-top: 85px;
+  padding-bottom: 30px;
+  padding-left: 7.15%;
+  padding-right: 7.15%;
+  box-sizing: border-box;
+
+}
+
+.main-blog__title-wrapper {
+  text-align: center;
+}
+
+.main-blog__title-wrapper h2 {
+  font-family: $cormorant-garamond;
+  margin: 0;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #1d1613;
+}
+
+.main-blog__title-wrapper a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 19px;
+  width: 76px;
+  text-decoration: none;
+  color:  #1d1613;
+}
+
+.main-blog__title-wrapper a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 5px;
+  width: 64px;
+  height: 1px;
+  background-color: #a87b62;
+}
+
+.main-blog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
+.main-blog__care-wrapper {
+  display: flex;
+  width: 570px;
+}
+
+.main-blog__date-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 285px;
+  height: 300px;
+  padding-top: 67px;
+  box-sizing: border-box;
+  background-color: #f0eae4;
+}
+
+.main-blog__date-wrapper time {
+  font-size: 14px;
+  line-height: 18px;
+  color: #9b9997;
+}
+
+.main-blog__date-wrapper h3 {
+  font-family: $cormorant-garamond;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 400;
+  width: 165px;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.main-blog__date-wrapper a {
+  position: relative;
+  width: 97px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-decoration: none;
+  color: #1d1613;
+}
+
+.main-blog__date-wrapper a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 97px;
+  height: 1px;
+  background-color: #a87b62;
+}
+
+.main-blog__power-wrapper {
+  display: flex;
+  order: 3;
+  margin-top: -300px;
+}
+
+.main-blog__power-wrapper .main-blog__date-wrapper {
+  order: 1;
+}
+
+.main-blog__power-wrapper img {
+  order: 2;
+}
+
+.main-blog__trends-wrapper {
+  position: relative;
+  width: 570px;
+  height: 630px;
+  margin-left: 30px;
+  order: 2;
+}
+
+.main-blog__trends-wrapper .main-blog__date-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
