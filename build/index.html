@@ -123,7 +123,12 @@
         <div class="main-new__product-list-wrapper">
           <ul class="main-new__product-list">
             <li>
-              <img src="img/purple-gemstone-necklace-catalog-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+              <picture>
+                <!-- 1x: 130px 136px -->
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-mobile.webp" media="(max-width: 767px)">
+                <!-- 1x: 270px 284px -->
+                <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+              </picture>
               <p>Necklace with amethyst</p>
               <span>$ 145</span>
             </li>
@@ -153,6 +158,15 @@
           </li>
           <li class="main-new__page-item">
             <span>3</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>4</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>5</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>6</span>
           </li>
         </ul>
       </div>
