@@ -4,7 +4,6 @@
   padding-left: 7.15%;
   padding-right: 7.15%;
   box-sizing: border-box;
-
 }
 
 .main-blog__title-wrapper {
@@ -28,7 +27,7 @@
   margin-top: 19px;
   width: 76px;
   text-decoration: none;
-  color:  #1d1613;
+  color: #1d1613;
 }
 
 .main-blog__title-wrapper a::after {
@@ -46,14 +45,19 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 65px;
+}
+
+.main-blog__mini-wrapper {
+  margin: 0 auto;
 }
 
 .main-blog__care-wrapper {
   display: flex;
   width: 570px;
+  margin-bottom: 30px;
 }
 
 .main-blog__date-wrapper {
@@ -105,7 +109,7 @@
 
 .main-blog__power-wrapper {
   display: flex;
-  margin-top: -330px;
+  margin-bottom: 30px;
   order: 2;
 }
 
@@ -120,12 +124,12 @@
 .main-blog__trends-wrapper {
   position: relative;
   width: 570px;
-  height: 630px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
 .main-blog__trends-wrapper .main-blog__date-wrapper {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 0;
 }

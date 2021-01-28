@@ -49,11 +49,22 @@
 }
 
 .main-new__title-wrapper a {
+  position: relative;
   display: block;
   text-align: center;
   margin-top: 25px;
-  text-decoration-color: #a87b62;
+  text-decoration: none;
   color: #1d1613;
+}
+
+.main-new__title-wrapper a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 80px;
+  height: 1px;
+  background-color: #a87b62;
 }
 
 .main-new__product-list-wrapper {
@@ -123,7 +134,7 @@
   margin-right: 0;
 }
 
-.main-new__mobile-page-wrapper{
+.main-new__mobile-page-wrapper {
   display: none;
 }
 
