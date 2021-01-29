@@ -45,13 +45,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   margin-top: 65px;
-}
-
-.main-blog__mini-wrapper {
-  margin: 0 auto;
 }
 
 .main-blog__care-wrapper {
@@ -124,7 +120,7 @@
 .main-blog__trends-wrapper {
   position: relative;
   width: 570px;
-  margin: 0 auto;
+  margin-left: 5px;
   margin-bottom: 30px;
 }
 
@@ -132,4 +128,44 @@
   position: absolute;
   bottom: 5px;
   right: 0;
+}
+
+@media (max-width: 1336px) {
+  .main-blog__wrapper {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: $tablet-width-only) {
+  .main-blog {
+    padding-left: 5.86%;
+    padding-right: 5.86%;
+  }
+
+  .main-blog__care-wrapper,
+  .main-blog__power-wrapper,
+  .main-blog__trends-wrapper {
+    width: 678px;
+    margin-left: 0;
+  }
+
+  .main-blog__date-wrapper {
+    width: 339px;
+  }
+
+  .main-blog__care-wrapper img,
+  .main-blog__power-wrapper img,
+  .main-blog__trends-wrapper img {
+    width: 339px;
+    height: 300px;
+  }
+
+  .main-blog__trends-wrapper {
+    display: flex;
+  }
+
+  .main-blog__trends-wrapper .main-blog__date-wrapper {
+    position: static;
+  }
 }
