@@ -91,7 +91,7 @@
 
 .main-new__product-list p {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 20px;
   text-align: center;
   color: #1d1613;
 }
@@ -142,15 +142,74 @@
   .main-new {
     padding-left: 5.86%;
     padding-right: 5.86%;
-    padding-top: 120px;
+    padding-top: 70px;
+  }
+
+  .main-new__back-button-wrapper {
+    margin-left: -6px;
+    margin-right: 5px;
+  }
+
+  .main-new__title-wrapper a {
+    margin-top: 20px;
+  }
+
+  .main-new__title-wrapper a::after {
+    bottom: -4px;
+  }
+
+  .main-new__product-list-wrapper {
+    margin-top: 54px;
+    width: 678px;
+    justify-content: space-between;
   }
 
   .main-new__product-list {
-    height: 350px;
+    height: 405px;
+  }
+
+  .main-new__product-list p {
+    margin-top: 20px;
+  }
+
+  .main-new__product-list li:nth-child(2n + 1) p {
+    margin-top: 16px;
+    padding-left: 14px;
+  }
+
+  .main-new__product-list li:nth-child(2n + 1) span {
+    margin-top: 11px;
+  }
+
+  .main-new__product-list img {
+    display: block;
+    width: 324px;
+    height: 340px;
   }
 
   .main-new__wrapper {
-    max-width: 650px;
+    max-width: 678px;
+  }
+
+  .main-new__wrapper svg {
+    width: 36px;
+    height: 15px;
+  }
+
+  .main-new__wrapper button {
+    width: 45px;
+  }
+
+  .main-new__back-button-wrapper svg {
+    margin-top: 12px;
+  }
+
+  .main-new__forward-button-wrapper svg {
+    margin-top: 12px;
+  }
+
+  .main-new__product-list li:nth-child(4n + 2) {
+    margin-right: 0;
   }
 
   .main-new__page-list li:nth-child(6n + 3) {
@@ -168,20 +227,29 @@
   .main-new {
     padding-left: 4.69%;
     padding-right: 4.69%;
+    padding-top: 61px;
   }
 
   .main-new__wrapper {
     max-width: 320px;
   }
 
+  .main-new__product-list-wrapper {
+    margin-top: 44px;
+  }
+
   .main-new__product-list {
-    height: 230px;
+    height: 225px;
     max-width: 290px;
   }
 
   .main-new__product-list img {
     width: 130px;
     height: 136px;
+  }
+
+  .main-new__title-wrapper a {
+    margin-top: 19px;
   }
 
   .main-new__product-list p {
@@ -195,6 +263,7 @@
   .main-new__mobile-page-wrapper {
     display: flex;
     margin: 0 auto;
+    margin-top: 10px;
   }
 
   .main-new__mobile-page-list {
@@ -215,5 +284,18 @@
 
   .main-new__mobile-page-item--active {
     display: block;
+  }
+
+  .main-new__product-list li:nth-child(2n + 1) p {
+    margin-top: 16px;
+    padding-left: 0px;
+  }
+
+  .main-new__product-list li:nth-child(2n + 1) span {
+    margin-top: 6px;
+  }
+
+  .main-new__product-list p {
+    margin-top: 16px;
   }
 }

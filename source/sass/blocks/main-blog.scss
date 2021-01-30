@@ -105,6 +105,7 @@
 
 .main-blog__power-wrapper {
   display: flex;
+  flex-direction: row-reverse;
   margin-bottom: 30px;
   order: 2;
 }
@@ -126,7 +127,7 @@
 
 .main-blog__trends-wrapper .main-blog__date-wrapper {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   right: 0;
 }
 
@@ -141,6 +142,7 @@
   .main-blog {
     padding-left: 5.86%;
     padding-right: 5.86%;
+    padding-top: 36px;
   }
 
   .main-blog__care-wrapper,
@@ -148,6 +150,7 @@
   .main-blog__trends-wrapper {
     width: 678px;
     margin-left: 0;
+    margin-bottom: 50px;
   }
 
   .main-blog__date-wrapper {
@@ -163,9 +166,56 @@
 
   .main-blog__trends-wrapper {
     display: flex;
+    margin-bottom: 20px;
   }
 
   .main-blog__trends-wrapper .main-blog__date-wrapper {
     position: static;
+    padding-top: 85px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-blog {
+    padding-left: 4.69%;
+    padding-right: 4.69%;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 9px;
+    box-sizing: border-box;
+  }
+
+  .main-blog__wrapper {
+    margin-top: 54px;
+  }
+
+  .main-blog__care-wrapper,
+  .main-blog__power-wrapper,
+  .main-blog__trends-wrapper {
+    flex-direction: column;
+    width: 290px;
+    margin-bottom: 40px;
+  }
+
+  .main-blog__trends-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .main-blog__care-wrapper img,
+  .main-blog__power-wrapper img,
+  .main-blog__trends-wrapper img{
+    width: 290px;
+    height: 256px;
+  }
+
+  .main-blog__date-wrapper {
+    width: 290px;
+    height: auto;
+    min-height: 256px;
+    padding-top: 45px;
+  }
+
+  .main-blog__trends-wrapper .main-blog__date-wrapper {
+    padding-top: 62px;
   }
 }

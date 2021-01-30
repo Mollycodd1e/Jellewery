@@ -1,7 +1,7 @@
 .main-faq {
   padding-left: 7.2%;
   padding-right: 7.2%;
-  padding-top: 55px;
+  padding-top: 60px;
   padding-bottom: 50px;
   box-sizing: border-box;
 }
@@ -93,7 +93,6 @@
 .main-faq__delivery-wrapper p,
 .main-faq__payment-wrapper p,
 .main-faq__return-wrapper p {
-  display: none;
   width: 100%;
   margin: 0;
   margin-top: 7px;
@@ -101,22 +100,85 @@
   padding-right: 350px;
 }
 
-.main-faq__material-wrapper p {
-  width: 100%;
-  margin: 0;
-  margin-top: 7px;
-  padding-left: 10px;
-  padding-right: 350px;
+.main-faq__delivery-wrapper--close p,
+.main-faq__payment-wrapper--close p,
+.main-faq__return-wrapper--close p,
+.main-faq__material-wrapper--close p {
+  display: none;
 }
 
 @media (max-width: $tablet-width-only) {
   .main-faq {
     padding-left: 5.86%;
     padding-right: 5.86%;
+    padding-top: 20px;
   }
 
-  .main-faq__material-wrapper p {
+  .main-faq__wrapper div {
+    padding-left: 47px;
+    padding-bottom: 43px;
+  }
+
+  .main-faq__material-wrapper p,
+  .main-faq__delivery-wrapper p,
+  .main-faq__payment-wrapper p,
+  .main-faq__return-wrapper p {
     padding-left: 0;
+    margin-top: 26px;
     padding-right: 40px;
+    width: 551px;
+  }
+
+  .main-faq__wrapper button::before {
+    left: -4px;
+    width: 14px;
+  }
+
+  .main-faq__wrapper button::after {
+    left: 4px;
+    width: 14px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-faq {
+    padding-left: 4.69%;
+    padding-right: 4.69%;
+    padding-top: 11px;
+  }
+
+  .main-faq__wrapper {
+    margin-top: 27px;
+  }
+
+  .main-faq__wrapper div {
+    padding-top: 19px;
+    padding-left: 22px;
+    padding-bottom: 20px;
+    padding-right: 21px;
+  }
+
+  .main-faq__wrapper h3 {
+    width: 215px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .main-faq__material-wrapper p,
+  .main-faq__delivery-wrapper p,
+  .main-faq__payment-wrapper p,
+  .main-faq__return-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 18px;
+  }
+
+  .main-faq__wrapper .main-faq__material-wrapper--open,
+  .main-faq__wrapper .main-faq__delivery-wrapper--open,
+  .main-faq__wrapper .main-faq__payment-wrapper--open,
+  .main-faq__wrapper .main-faq__return-wrapper--open {
+    padding-top: 16px;
+    padding-bottom: 18px;
   }
 }
