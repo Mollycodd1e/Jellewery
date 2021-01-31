@@ -47,6 +47,10 @@
   width: 200px;
 }
 
+.main-nav__form-wrapper--catalog form {
+  margin-top: 6px;
+}
+
 .main-nav__form-wrapper button {
   position: absolute;
   top: -4px;
@@ -56,6 +60,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.main-nav__form-wrapper--catalog button {
+  top: 0;
 }
 
 .main-nav__form-wrapper button:hover,
@@ -119,6 +127,10 @@
   margin-left: auto;
 }
 
+.main-nav__user-list--catalog {
+  margin-top: 23px;
+}
+
 .main-nav__user-list a {
   text-decoration: none;
   color: #1d1613;
@@ -147,6 +159,10 @@
   width: 100%;
 }
 
+.main-nav__menu-list-wrapper--catalog {
+  margin-top: 10px;
+}
+
 .main-nav__menu-list {
   padding: 0;
   margin: 0 auto;
@@ -163,6 +179,10 @@
 .main-nav__menu-list a {
   text-decoration: none;
   color: #1d1613;
+}
+
+.main-nav__menu-list-wrapper--catalog .main-nav__menu-list {
+  margin-bottom: 14px;
 }
 
 .main-nav__menu-item {

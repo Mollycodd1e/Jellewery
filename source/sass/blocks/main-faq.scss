@@ -22,7 +22,7 @@
   margin-top: 48px;
 }
 
-.main-faq__wrapper div {
+.main-faq__faq-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-top: 44px;
@@ -30,11 +30,24 @@
   padding-left: 39px;
   padding-right: 46px;
   border: 1px solid #a87b62;
+  cursor: pointer;
 }
 
-.main-faq__wrapper div:nth-child(4n + 2),
-.main-faq__wrapper div:nth-child(4n + 3),
-.main-faq__wrapper div:nth-child(4n + 4) {
+.main-faq__faq-wrapper:hover {
+  background-color: #a87b62;
+}
+
+.main-faq__faq-wrapper:hover h3 {
+  color: #ffffff;
+}
+
+.main-faq__faq-wrapper:hover p {
+  color: #ffffff;
+}
+
+.main-faq__faq-wrapper:nth-child(4n + 2),
+.main-faq__faq-wrapper:nth-child(4n + 3),
+.main-faq__faq-wrapper:nth-child(4n + 4) {
   border-top: none;
 }
 
@@ -45,6 +58,7 @@
   width: 20px;
   height: 20px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .main-faq__wrapper button::before {
@@ -69,17 +83,16 @@
   background-color: #a87b62;
 }
 
-.main-faq__material-wrapper--open button::before,
-.main-faq__delivery-wrapper--open button::before,
-.main-faq__payment-wrapper--open button::before,
-.main-faq__return-wrapper--open button::before {
+.main-faq__faq-wrapper:hover button::after,
+.main-faq__faq-wrapper:hover button::before {
+  background-color: #ffffff;
+}
+
+.main-faq__faq-wrapper--open button::before {
   transform: rotate(-45deg);
 }
 
-.main-faq__material-wrapper--open button::after,
-.main-faq__delivery-wrapper--open button::after,
-.main-faq__payment-wrapper--open button::after,
-.main-faq__return-wrapper--open button::after {
+.main-faq__faq-wrapper--open button::after {
   transform: rotate(45deg);
 }
 
@@ -90,20 +103,14 @@
   color: #1d1613;
 }
 
-.main-faq__delivery-wrapper p,
-.main-faq__payment-wrapper p,
-.main-faq__return-wrapper p {
+.main-faq__faq-wrapper p {
   width: 100%;
   margin: 0;
-  margin-top: 7px;
   padding-left: 10px;
   padding-right: 350px;
 }
 
-.main-faq__delivery-wrapper--close p,
-.main-faq__payment-wrapper--close p,
-.main-faq__return-wrapper--close p,
-.main-faq__material-wrapper--close p {
+.main-faq__faq-wrapper--close p {
   display: none;
 }
 
@@ -114,15 +121,12 @@
     padding-top: 20px;
   }
 
-  .main-faq__wrapper div {
+  .main-faq__faq-wrapper {
     padding-left: 47px;
     padding-bottom: 43px;
   }
 
-  .main-faq__material-wrapper p,
-  .main-faq__delivery-wrapper p,
-  .main-faq__payment-wrapper p,
-  .main-faq__return-wrapper p {
+  .main-faq__faq-wrapper p {
     padding-left: 0;
     margin-top: 26px;
     padding-right: 40px;
@@ -140,7 +144,7 @@
   }
 }
 
-@media (max-width: $tablet-width-only) {
+@media (max-width: $mobile-width-only) {
   .main-faq {
     padding-left: 4.69%;
     padding-right: 4.69%;
@@ -151,11 +155,15 @@
     margin-top: 27px;
   }
 
-  .main-faq__wrapper div {
+  .main-faq__faq-wrapper {
     padding-top: 19px;
     padding-left: 22px;
     padding-bottom: 20px;
     padding-right: 21px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 18px;
   }
 
   .main-faq__wrapper h3 {
@@ -164,20 +172,7 @@
     line-height: 21px;
   }
 
-  .main-faq__material-wrapper p,
-  .main-faq__delivery-wrapper p,
-  .main-faq__payment-wrapper p,
-  .main-faq__return-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    margin-top: 18px;
-  }
-
-  .main-faq__wrapper .main-faq__material-wrapper--open,
-  .main-faq__wrapper .main-faq__delivery-wrapper--open,
-  .main-faq__wrapper .main-faq__payment-wrapper--open,
-  .main-faq__wrapper .main-faq__return-wrapper--open {
+  .main-faq__wrapper .main-faq__faq-wrapper--open {
     padding-top: 16px;
     padding-bottom: 18px;
   }

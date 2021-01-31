@@ -1,0 +1,43 @@
+.catalog-title {
+  position: relative;
+  background-color: #a87b62;
+  background-image: url("../img/intro-catalog-desktop.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 261px;
+}
+
+.catalog-title__wrapper {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 488px;
+  margin-left: -243px;
+}
+
+.catalog-title__wrapper h2 {
+  margin: 0;
+  font-family: $cormorant-garamond;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.catalog-title__wrapper p {
+  margin: 0;
+  font-family: $cormorant-garamond;
+  font-size: 22px;
+  line-height: 29px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.catalog-title__wrapper--catalog p {
+  margin-top: 2px;
+}

@@ -28,7 +28,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__form-wrapper">
+        <div class="main-nav__form-wrapper main-nav__form-wrapper--catalog">
           <form>
             <button type="submit">
               <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
             <input type="search" placeholder="Type here to search">
           </form>
         </div>
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#icon-logo"></use>
           </svg>
@@ -49,7 +49,7 @@
             <use xlink:href="#icon-cart"></use>
           </svg>
         </a>
-        <ul class="main-nav__user-list">
+        <ul class="main-nav__user-list main-nav__user-list--catalog">
           <li class="main-nav__user-item">
             <a href="#">Login</a>
           </li>
@@ -59,7 +59,7 @@
             </a>
           </li>
         </ul>
-        <div class="main-nav__menu-list-wrapper">
+        <div class="main-nav__menu-list-wrapper main-nav__menu-list-wrapper--catalog">
           <ul class="main-nav__menu-list">
             <li class="main-nav__menu-item">
               <a href="#">What's new</a>
@@ -92,264 +92,234 @@
       </div>
     </nav>
   </header>
-  <main class="main-page">
-    <h1 class="visually-hidden">Магазин украшений CH</h1>
-    <section class="main-title">
-      <div class="main-title__wrapper">
-        <h2>Perfection</h2>
-        <p>made to be yours</p>
+  <main class="catalog-main">
+    <h1 class="visually-hidden">Каталог украшений магазина CH</h1>
+    <section class="catalog-title">
+      <div class="catalog-title__wrapper catalog-title__wrapper--catalog">
+        <h2>All jewellery</h2>
+        <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
       </div>
     </section>
-    <section class="main-new">
-      <div class="main-new__wrapper">
-        <div class="main-new__back-button-wrapper">
-          <button type="button">
-            <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#icon-slider-arrow-left"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="main-new__title-wrapper">
-          <h2>New In</h2>
-          <a href="catalog.html">Shop Now</a>
-        </div>
-        <div class="main-new__forward-button-wrapper">
-          <button type="button">
-            <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#icon-slider-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="main-new__product-list-wrapper">
-          <ul class="main-new__product-list">
-            <li class="main-new__product-item">
-              <picture>
-                <!-- 1x: 130px 136px -->
-                <source type="image/webp" srcset="img/purple-gemstone-necklace-mobile.webp" media="(max-width: 767px)">
-                <!-- 1x: 324px 340px -->
-                <source type="image/webp" srcset="img/purple-gemstone-necklace-tablet.webp" media="(max-width: 1023px)">
-                <!-- 1x: 270px 284px -->
-                <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-              </picture>
-              <p>Necklace with amethyst</p>
-              <span>$ 145</span>
-            </li>
-            <li>
-              <picture>
-                <!-- 1x: 130px 136px -->
-                <source type="image/webp" srcset="img/layered-choker-necklace-mobile.webp" media="(max-width: 767px)">
-                <!-- 1x: 324px 340px -->
-                <source type="image/webp" srcset="img/layered-choker-necklace-tablet.webp" media="(max-width: 1023px)">
-                <!-- 1x: 270px 284px -->
-                <img src="img/layered-choker-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-              </picture>
-              <p>Layered сhoker</p>
-              <span>$ 115</span>
-            </li>
-            <li>
-              <picture>
-                <!-- 1x: 130px 136px -->
-                <source type="image/webp" srcset="img/dainty-gold-necklace-mobile.webp" media="(max-width: 767px)">
-                <!-- 1x: 324px 340px -->
-                <source type="image/webp" srcset="img/dainty-gold-necklace-tablet.webp" media="(max-width: 1023px)">
-                <!-- 1x: 270px 284px -->
-                <img src="img/dainty-gold-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-              </picture>
-              <p>Gold chain</p>
-              <span>$ 215</span>
-            </li>
-            <li>
-              <picture>
-                <!-- 1x: 130px 136px -->
-                <source type="image/webp" srcset="img/galaxy-earrings-mobile.webp" media="(max-width: 767px)">
-                <!-- 1x: 324px 340px -->
-                <source type="image/webp" srcset="img/galaxy-earrings-tablet.webp" media="(max-width: 1023px)">
-                <!-- 1x: 270px 284px -->
-                <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-              </picture>
-              <p>Galaxy earrings</p>
-              <span>$ 95</span>
-            </li>
-          </ul>
-        </div>
-        <ul class="main-new__page-list">
-          <li class="main-new__page-item main-new__page-item--active">
-            <span>1</span>
+    <section class="catalog-filter">
+      <div class="catalog-filter__form-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--open">
+            <fieldset>
+              <legend>Product</legend>
+              <button type="button"></button>
+              <ul class="catalog-filter__list">
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="necklaces" id="id-necklaces" checked="">
+                  <label for="id-sport">Necklaces</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="chokers" id="id-chokers" checked="">
+                  <label for="id-chokers">Chokers</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="rings" id="id-rings">
+                  <label for="id-rings">Rings</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="earrings" id="id-earrings" checked="">
+                  <label for="id-earrings">Earrings</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--close">
+            <fieldset>
+              <legend>Material</legend>
+              <button type="button"></button>
+              <ul class="catalog-filter__list">
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="gold" id="id-gold">
+                  <label for="id-gold">Gold</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="silver" id="id-silver">
+                  <label for="id-silver">Silver</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--close">
+            <fieldset>
+              <legend>Collection</legend>
+              <button type="button"></button>
+              <ul class="catalog-filter__list">
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="id-pink-flamingo">
+                  <label for="id-pink-flamingo">Pink flamingo</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="dreams" id="id-dreams">
+                  <label for="id-dreams">Dreams</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--close">
+            <div class="catalog-filter__title-wrapper catalog-filter__title-wrapper--open">
+              <p>Price</p>
+            <button type="button"></button>
+            <div class="catalog-filter__slider-wrapper">
+              <div class="catalog-filter__range-wrapper">
+                <div class="catalog-filter__range-control">
+                  <div class="catalog-filter__scale">
+                    <div class="catalog-filter__bar">
+                    </div>
+                  </div>
+                  <div class="catalog-filter__toggle-min-wrapper">
+                    <button class="catalog-filter__toggle catalog-filter__toggle--min" type="button">
+                    </button>
+                  </div>
+                  <div class="catalog-filter__toggle-min-wrapper">
+                    <button class="catalog-filter__toggle catalog-filter__toggle--max" type="button">
+                    </button>
+                  </div>
+                  <div class="catalog-filter__level-control">
+                    <label for="id-catalog-filter__min-level">
+                      <input type="text" name="catalog-filter__min-level" id="id-catalog-filter__min-level" value="$ 55">
+                    </label>
+                    <label for="id-catalog-filter__max-level">
+                      <input type="text" name="catalog-filter__max-level" id="id-catalog-filter__max-level" value="$ 155">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="catalog-filter__submit-button">
+            <button type="submit">Apply</button>
+          </div></form>
+          <div class="catalog-filter__clear-button">
+            <button type="button">Clear All</button>
+          </div>
+        
+      </div>
+      <div class="catalog-filter__product-list-wrapper">
+        <ul class="catalog-filter__product-list">
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/double-pearl-earrings-desktop.jpg" width="270" height="272" alt="Сережка с двойной жемчужиной">
+            </picture>
+            <p>Double pearl earrings</p>
+            <span>$ 115</span>
           </li>
-          <li class="main-new__page-item">
-            <span>2</span>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/black-choker-gold-bead-desktop.jpg" width="270" height="272" alt="Колье с золотым шариком">
+            </picture>
+            <p>Choker with gold bead</p>
+            <span>$ 55</span>
           </li>
-          <li class="main-new__page-item">
-            <span>3</span>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/gold-layered-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с несколькими золотыми цепями">
+            </picture>
+            <p>Gold layered necklace</p>
+            <span>$ 155</span>
           </li>
-          <li class="main-new__page-item">
-            <span>4</span>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/blue-gemstone-pendant-desktop.jpg" width="270" height="272" alt="Кулон с синим драгоценным камнем">
+            </picture>
+            <p>Blue gemstone pendant</p>
+            <span>$ 105</span>
           </li>
-          <li class="main-new__page-item">
-            <span>5</span>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/boho-earrings-desktop.jpg" width="270" height="272" alt="Серьги в стиле Бохо">
+            </picture>
+            <p>Boho earrings</p>
+            <span>$ 75</span>
           </li>
-          <li class="main-new__page-item">
-            <span>6</span>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/bird-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с золотой птичкой">
+            </picture>
+            <p>Gold bird necklace</p>
+            <span>$ 135</span>
+          </li>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/black-leather-choker-necklace-desktop.jpg" width="270" height="272" alt="Черное кожаное колье">
+            </picture>
+            <p>Black leather choker</p>
+            <span>$ 85</span>
+          </li>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с аметистом">
+            </picture>
+            <p>Necklace with amethyst</p>
+            <span>$ 145</span>
+          </li>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/elephant-earrings-desktop.jpg" width="270" height="272" alt="Сережки в виде слоников">
+            </picture>
+            <p>Elephant earrings</p>
+            <span>$ 95</span>
+          </li>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/threader-necklace-closeup-desktop.jpg" width="270" height="272" alt="Нитевидное ожерелье">
+            </picture>
+            <p>Threader necklace</p>
+            <span>$ 115</span>
+          </li>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/origami-crane-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с оригами журавлика">
+            </picture>
+            <p>Origami crane necklace</p>
+            <span>$ 105</span>
+          </li>
+          <li>
+            <picture>
+              <source srcset="">
+              <img src="img/marble-earrings-desktop.jpg" width="270" height="272" alt="Серьги из мрамора">
+            </picture>
+            <p>Marble earrings</p>
+            <span>$ 95</span>
           </li>
         </ul>
-        <div class="main-new__mobile-page-wrapper">
-          <ul class="main-new__mobile-page-list">
-            <li class="main-new__mobile-page-item main-new__mobile-page-item--active">
-              <span>1</span>
+        <div class="catalog-filter__page-wrapper">
+          <a href="#">Previous</a>
+          <ul class="catalog-filter__page-list">
+            <li class="catalog-filter__page-item catalog-filter__page-item--active">
+              <a href="#">1</a>
             </li>
-            <li class="main-new__mobile-page-item">
-              <span>2</span>
+            <li class="catalog-filter__page-item">
+              <a href="#">2</a>
             </li>
-            <li class="main-new__mobile-page-item">
-              <span>3</span>
+            <li class="catalog-filter__page-item">
+              <a href="#">3</a>
             </li>
-            <li class="main-new__mobile-page-item">
-              <span>4</span>
+            <li class="catalog-filter__page-item">
+              <a href="#">4</a>
             </li>
-            <li class="main-new__mobile-page-item">
-              <span>5</span>
-            </li>
-            <li class="main-new__mobile-page-item">
-              <span>6</span>
+            <li class="catalog-filter__page-item">
+              <a href="#">5</a>
             </li>
           </ul>
-          <p>of 6</p>
+          <a href="#">Next</a>
         </div>
-      </div>
-    </section>
-    <section class="main-blog">
-      <div class="main-blog__title-wrapper">
-        <h2>Blog</h2>
-        <a href="#">Read All</a>
-      </div>
-      <div class="main-blog__wrapper">
-        <div class="main-blog__mini-wrapper">
-          <div class="main-blog__care-wrapper">
-            <picture>
-              <source srcset="img/jewellery-care-mobile.jpg" media="(max-width: 767px)">
-              <source srcset="img/jewellery-care-tablet.jpg" media="(max-width: 1023px)">
-              <img src="img/jewellery-care-desktop.jpg" width="285" height="300" alt="Фото как ухаживать за украшениями">
-            </picture>
-            <div class="main-blog__date-wrapper">
-              <time datetime="2019-09-30">September 30, 2019</time>
-              <h3>How to care for your jewellery</h3>
-              <a href="#">Read Article</a>
-            </div>
-          </div>
-          <div class="main-blog__power-wrapper">
-            <picture>
-              <source srcset="img/crystal-power-mobile.jpg" media="(max-width: 767px)">
-              <source srcset="img/crystal-power-tablet.jpg" media="(max-width: 1023px)">
-              <img src="img/crystal-power-desktop.jpg" width="285" height="300" alt="Фото как ухаживать за украшениями">
-            </picture>
-            <div class="main-blog__date-wrapper">
-              <time datetime="2019-09-30">September 23, 2019</time>
-              <h3>Power of crystals</h3>
-              <a href="#">Read Article</a>
-            </div>
-          </div>
-        </div>
-        <div class="main-blog__trends-wrapper">
-          <picture>
-            <source srcset="img/blog-trends-mobile.jpg" media="(max-width: 767px)">
-            <source srcset="img/blog-trends-tablet.jpg" media="(max-width: 1023px)">
-            <img src="img/blog-trends-desktop.jpg" width="570" height="630" alt="Фото как ухаживать за украшениями">
-          </picture>
-          <div class="main-blog__date-wrapper">
-            <time datetime="2019-09-30">September 16, 2019</time>
-            <h3>AW 19 trends</h3>
-            <a href="#">Read Article</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-faq">
-      <h2>Frequently asked questions</h2>
-      <div class="main-faq__wrapper">
-        <div class="main-faq__faq-wrapper main-faq__faq-wrapper--open">
-          <h3>What materials are the&nbsp;jewellery made of?</h3>
-          <button type="button">
-            <span class="visually-hidden">Открытие/закрытие раздела из какого метариала сделаны украшения</span>
-          </button>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-        </div>
-        <div class="main-faq__faq-wrapper main-faq__faq-wrapper--close">
-          <h3>Which countries do&nbsp;you&nbsp;deliver to?</h3>
-          <button type="button">
-            <span class="visually-hidden">Открытие/закрытие раздела в какие страны доставляют</span>
-          </button>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-        </div>
-        <div class="main-faq__faq-wrapper main-faq__faq-wrapper--close">
-          <h3>What are the payment&nbsp;methods?</h3>
-          <button type="button">
-            <span class="visually-hidden">Открытие/закрытие раздела методы оплаты</span>
-          </button>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-        </div>
-        <div class="main-faq__faq-wrapper main-faq__faq-wrapper--close">
-          <h3>Can I return the jewellery&nbsp;if it didn’t fit me?</h3>
-          <button type="button">
-            <span class="visually-hidden">Открытие/закрытие раздела возврата</span>
-          </button>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-        </div>
-      </div>
-    </section>
-    <section class="main-gallery">
-      <div class="main-gallery__title-wrapper">
-        <h2>@Chjewellery</h2>
-        <a href="#">Follow Us</a>
-      </div>
-      <div class="main-gallery__wrapper">
-        <div class="main-gallery__wrapper-big">
-          <div class="main-gallery__wrapper-one">
-            <picture>
-              <source srcset="img/inst-1-mobile.jpg" media="(max-width: 767px)">
-              <source srcset="img/inst-1-tablet.jpg" media="(max-width: 1023px)">
-              <img src="img/inst-1-desktop.jpg" width="230" height="230" alt="Фото 1 из инстаграма">
-            </picture>
-            <div class="main-gallery__second-photo">
-              <picture>
-                <source srcset="img/inst-2-mobile.jpg" media="(max-width: 767px)">
-                <source srcset="img/inst-2-tablet.jpg" media="(max-width: 1023px)">
-                <img src="img/inst-2-desktop.jpg" width="230" height="154" alt="Фото 2 из инстаграма">
-              </picture>
-            </div>
-          </div>
-          <picture>
-            <source srcset="img/inst-3-mobile.jpg" media="(max-width: 767px)">
-            <source srcset="img/inst-3-tablet.jpg" media="(max-width: 1023px)">
-            <img src="img/inst-3-desktop.jpg" width="400" height="414" alt="Фото 3 из инстаграма">
-          </picture>
-        </div>
-        <div class="main-gallery__wrapper-two">
-          <picture>
-            <source srcset="img/inst-4-mobile.jpg" media="(max-width: 767px)">
-            <source srcset="img/inst-4-tablet.jpg" media="(max-width: 1023px)">
-            <img src="img/inst-4-desktop.jpg" width="232" height="193" alt="Фото 4 из инстаграма">
-          </picture>
-          <div class="main-gallery__sixth-photo">
-            <picture>
-              <source srcset="img/inst-6-tablet.jpg" media="(max-width: 1023px)">
-              <img src="img/inst-6-desktop.jpg" width="218" height="218" alt="Фото 6 из инстаграма">
-            </picture>
-          </div>
-          <div class="main-gallery__fifth-photo">
-            <picture>
-              <source srcset="img/inst-5-mobile.jpg" media="(max-width: 767px)">
-              <source srcset="img/inst-5-tablet.jpg" media="(max-width: 1023px)">
-              <img src="img/inst-5-desktop.jpg" width="218" height="191" alt="Фото 5 из инстаграма">
-            </picture>
-          </div>
-          <div class="main-gallery__seventh-photo">
-            <picture>
-              <source srcset="img/inst-7-tablet.jpg" media="(max-width: 1023px)">
-              <img src="img/inst-7-desktop.jpg" width="232" height="166" alt="Фото 7 из инстаграма">
-            </picture>
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
   </main>
   <footer class="main-footer">

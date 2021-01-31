@@ -30,6 +30,10 @@
   color: #1d1613;
 }
 
+.main-blog__title-wrapper a:hover {
+  color: #a87b62;
+}
+
 .main-blog__title-wrapper a::after {
   content: "";
   position: absolute;
@@ -91,6 +95,10 @@
   margin-top: 35px;
   text-decoration: none;
   color: #1d1613;
+}
+
+.main-blog__date-wrapper a:hover {
+  color: #a87b62;
 }
 
 .main-blog__date-wrapper a::after {
@@ -203,7 +211,7 @@
 
   .main-blog__care-wrapper img,
   .main-blog__power-wrapper img,
-  .main-blog__trends-wrapper img{
+  .main-blog__trends-wrapper img {
     width: 290px;
     height: 256px;
   }
