@@ -41,3 +41,14 @@
 .catalog-title__wrapper--catalog p {
   margin-top: 2px;
 }
+
+
+@media (max-width: $tablet-width-only) {
+  .catalog-title {
+    background-image: url("../img/intro-catalog-tablet.jpg");
+  }
+
+  .catalog-title__wrapper {
+    top: 10%;
+  }
+}

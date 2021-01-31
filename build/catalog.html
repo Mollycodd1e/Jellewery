@@ -23,7 +23,7 @@
 </symbol><symbol id="icon-twitter"><path d="M15 1.543a5.875 5.875 0 01-1.768.516A3.263 3.263 0 0014.586.244a5.925 5.925 0 01-1.955.796 3.025 3.025 0 00-1.746-.996 2.913 2.913 0 00-1.954.344 3.206 3.206 0 00-1.353 1.543 3.48 3.48 0 00-.19 2.101 8.318 8.318 0 01-3.514-.995A8.868 8.868 0 011.044.604a3.44 3.44 0 00-.416 1.65c0 1.137.543 2.142 1.368 2.73a2.924 2.924 0 01-1.393-.41v.04c0 .758.246 1.492.696 2.079.45.586 1.076.988 1.773 1.139-.454.13-.93.15-1.391.056a3.287 3.287 0 001.094 1.631 2.958 2.958 0 001.78.648 6.03 6.03 0 01-2.15 1.162c-.782.233-1.6.3-2.405.196A8.318 8.318 0 004.717 13c5.661 0 8.757-4.999 8.757-9.334 0-.141-.004-.284-.01-.424A6.496 6.496 0 0015 1.544z"></path></symbol></svg>
   </div>
   <header class="main-header">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--catalog main-nav--closed">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -100,9 +100,18 @@
         <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
       </div>
     </section>
-    <section class="catalog-filter">
+    <section class="catalog-filter catalog-filter--closed">
+      <div class="catalog-filter__filter-button">
+        <a href="#">
+          <span>Filter</span>
+        </a>
+      </div>
       <div class="catalog-filter__form-wrapper">
         <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="catalog-filter__form-button">
+            <button type="button">
+            </button>
+          </div>
           <div class="catalog-filter__wrapper catalog-filter__wrapper--open">
             <fieldset>
               <legend>Product</legend>
@@ -159,7 +168,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="catalog-filter__wrapper catalog-filter__wrapper--close">
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--slider catalog-filter__wrapper--close">
             <div class="catalog-filter__title-wrapper catalog-filter__title-wrapper--open">
               <p>Price</p>
             <button type="button"></button>
@@ -193,23 +202,23 @@
           </div>
           <div class="catalog-filter__submit-button">
             <button type="submit">Apply</button>
-          </div></form>
+          </div>
           <div class="catalog-filter__clear-button">
             <button type="button">Clear All</button>
           </div>
-        
+        </form>
       </div>
       <div class="catalog-filter__product-list-wrapper">
         <ul class="catalog-filter__product-list">
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <source srcset="img/double-pearl-earrings-tablet.jpg" media="(max-width: 1023px)">
               <img src="img/double-pearl-earrings-desktop.jpg" width="270" height="272" alt="Сережка с двойной жемчужиной">
             </picture>
             <p>Double pearl earrings</p>
             <span>$ 115</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/black-choker-gold-bead-desktop.jpg" width="270" height="272" alt="Колье с золотым шариком">
@@ -217,7 +226,7 @@
             <p>Choker with gold bead</p>
             <span>$ 55</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/gold-layered-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с несколькими золотыми цепями">
@@ -225,7 +234,7 @@
             <p>Gold layered necklace</p>
             <span>$ 155</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/blue-gemstone-pendant-desktop.jpg" width="270" height="272" alt="Кулон с синим драгоценным камнем">
@@ -233,7 +242,7 @@
             <p>Blue gemstone pendant</p>
             <span>$ 105</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/boho-earrings-desktop.jpg" width="270" height="272" alt="Серьги в стиле Бохо">
@@ -241,7 +250,7 @@
             <p>Boho earrings</p>
             <span>$ 75</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/bird-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с золотой птичкой">
@@ -249,7 +258,7 @@
             <p>Gold bird necklace</p>
             <span>$ 135</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/black-leather-choker-necklace-desktop.jpg" width="270" height="272" alt="Черное кожаное колье">
@@ -257,7 +266,7 @@
             <p>Black leather choker</p>
             <span>$ 85</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с аметистом">
@@ -265,7 +274,7 @@
             <p>Necklace with amethyst</p>
             <span>$ 145</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/elephant-earrings-desktop.jpg" width="270" height="272" alt="Сережки в виде слоников">
@@ -273,7 +282,7 @@
             <p>Elephant earrings</p>
             <span>$ 95</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/threader-necklace-closeup-desktop.jpg" width="270" height="272" alt="Нитевидное ожерелье">
@@ -281,7 +290,7 @@
             <p>Threader necklace</p>
             <span>$ 115</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/origami-crane-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с оригами журавлика">
@@ -289,7 +298,7 @@
             <p>Origami crane necklace</p>
             <span>$ 105</span>
           </li>
-          <li>
+          <li class="catalog-filter__product-item">
             <picture>
               <source srcset="">
               <img src="img/marble-earrings-desktop.jpg" width="270" height="272" alt="Серьги из мрамора">

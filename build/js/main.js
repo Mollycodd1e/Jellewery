@@ -1,6 +1,28 @@
 'use strict';
 
 (function () {
+
+  var filterSection = document.querySelector('.catalog-filter');
+
+  if (filterSection) {
+    var filterButton = filterSection.querySelector('.catalog-filter__filter-button');
+
+    filterButton.addEventListener('click', function () {
+
+      if (filterSection.classList.contains('catalog-filter--closed')) {
+        filterSection.classList.remove('catalog-filter--closed');
+        filterSection.classList.add('catalog-filter--opened');
+      } else {
+        filterSection.classList.remove('catalog-filter--opened');
+        filterSection.classList.add('catalog-filter--closed');
+      }
+    });
+  }
+})();
+
+'use strict';
+
+(function () {
   var mainFaq = document.querySelector('.main-faq');
 
   if (mainFaq) {
@@ -26,6 +48,23 @@
     for (var i = 0; i < allFaq.length; i++) {
       openToggle(allFaq[i]);
     }
+  }
+})();
+
+'use strict';
+
+(function () {
+  var catalog = document.querySelector('.catalog-filter');
+
+  if (catalog) {
+    var closeButton = catalog.querySelector('.catalog-filter__form-button');
+
+    closeButton.addEventListener('click', function () {
+      if (catalog.classList.contains('catalog-filter--opened')) {
+        catalog.classList.remove('catalog-filter--opened');
+        catalog.classList.add('catalog-filter--closed');
+      }
+    });
   }
 })();
 
