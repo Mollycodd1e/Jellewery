@@ -42,6 +42,13 @@
   margin-top: 2px;
 }
 
+@media (min-width: $desktop-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-about__wrapper {
+      background-image: url("../img/intro-catalog-desktop@2x.jpg");
+    }
+  }
+}
 
 @media (max-width: $tablet-width-only) {
   .catalog-title {
@@ -50,5 +57,13 @@
 
   .catalog-title__wrapper {
     top: 10%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-about__wrapper {
+      background-image: url("../img/intro-catalog-tablet@2x.jpg");
+    }
   }
 }
