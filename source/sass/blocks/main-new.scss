@@ -76,13 +76,14 @@
 .main-new__product-list-wrapper {
   margin-top: 59px;
   width: 1170px;
+  overflow: hidden;
 }
 
 .main-new__product-list {
   padding: 0;
   max-width: 1170px;
-  height: 360px;
-  overflow: hidden;
+  height: 358px;
+  //overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -138,7 +139,7 @@
   list-style: none;
   display: flex;
   margin: 0 auto;
-  margin-top: 42px;
+  margin-top: 44px;
   justify-content: center;
 }
 
