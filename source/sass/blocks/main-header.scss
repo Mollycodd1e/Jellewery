@@ -9,11 +9,19 @@
     padding-left: 5.86%;
     padding-right: 5.86%;
   }
+
+  .main-header--opened {
+    padding-top: 126px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
   .main-header {
     padding-left: 4.69%;
     padding-right: 4.69%;
+  }
+
+  .main-header--opened {
+    padding-top: 92px;
   }
 }

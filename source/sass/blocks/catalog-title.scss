@@ -67,3 +67,32 @@
     }
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .catalog-title {
+    background-image: url("../img/intro-catalog-mobile.jpg");
+  }
+
+  .catalog-title__wrapper p {
+    padding-left: 2px;
+    line-height: 26px;
+    margin-top: 4px;
+    font-style: italic;
+    width: 255px;
+  }
+
+  .catalog-title__wrapper {
+    top: 30%;
+    left: 50%;
+    margin-left: -130px;
+    width: 260px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-about__wrapper {
+      background-image: url("../img/intro-catalog-mobile@2x.jpg");
+    }
+  }
+}
