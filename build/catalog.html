@@ -111,7 +111,7 @@
               <ul class="catalog-filter__list">
                 <li>
                   <input class="visually-hidden" type="checkbox" name="necklaces" id="id-necklaces" checked="">
-                  <label for="id-sport">Necklaces</label>
+                  <label for="id-necklaces">Necklaces</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox" name="chokers" id="id-chokers" checked="">
@@ -161,7 +161,7 @@
             </fieldset>
           </div>
           <div class="catalog-filter__wrapper catalog-filter__wrapper--slider catalog-filter__wrapper--close">
-            <div class="catalog-filter__title-wrapper catalog-filter__title-wrapper--open">
+            <div class="catalog-filter__title-wrapper catalog-filter__title-wrapper--opened">
               <p>Price</p>
             <button type="button"></button>
             <div class="catalog-filter__slider-wrapper">
@@ -204,7 +204,12 @@
         <ul class="catalog-filter__product-list">
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="img/double-pearl-earrings-tablet.jpg" media="(max-width: 1023px)">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/double-pearl-earrings-mobile.webp 1x, img/double-pearl-earrings-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/double-pearl-earrings-tablet.webp 1x, img/double-pearl-earrings-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/double-pearl-earrings-desktop.webp 1x, img/double-pearl-earrings-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/double-pearl-earrings-desktop.jpg" width="270" height="272" alt="Сережка с двойной жемчужиной">
             </picture>
             <p>Double pearl earrings</p>
@@ -212,7 +217,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/black-choker-gold-bead-mobile.webp 1x, img/black-choker-gold-bead-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/black-choker-gold-bead-tablet.webp 1x, img/black-choker-gold-bead-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/black-choker-gold-bead-desktop.webp 1x, img/black-choker-gold-bead-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/black-choker-gold-bead-desktop.jpg" width="270" height="272" alt="Колье с золотым шариком">
             </picture>
             <p>Choker with gold bead</p>
@@ -220,7 +230,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/gold-layered-necklace-mobile.webp 1x, img/gold-layered-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/gold-layered-necklace-tablet.webp 1x, img/gold-layered-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/gold-layered-necklace-desktop.webp 1x, img/gold-layered-necklace-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/gold-layered-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с несколькими золотыми цепями">
             </picture>
             <p>Gold layered necklace</p>
@@ -228,7 +243,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/blue-gemstone-pendant-mobile.webp 1x, img/blue-gemstone-pendant-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/blue-gemstone-pendant-tablet.webp 1x, img/blue-gemstone-pendant-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/blue-gemstone-pendant-desktop.webp 1x, img/blue-gemstone-pendant-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/blue-gemstone-pendant-desktop.jpg" width="270" height="272" alt="Кулон с синим драгоценным камнем">
             </picture>
             <p>Blue gemstone pendant</p>
@@ -236,7 +256,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/boho-earrings-mobile.webp 1x, img/boho-earrings-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/boho-earrings-tablet.webp 1x, img/boho-earrings-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/boho-earrings-desktop.webp 1x, img/boho-earrings-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/boho-earrings-desktop.jpg" width="270" height="272" alt="Серьги в стиле Бохо">
             </picture>
             <p>Boho earrings</p>
@@ -244,7 +269,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/bird-necklace-mobile.webp 1x, img/bird-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/bird-necklace-tablet.webp 1x, img/bird-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/bird-necklace-desktop.webp 1x, img/bird-necklace-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/bird-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с золотой птичкой">
             </picture>
             <p>Gold bird necklace</p>
@@ -252,7 +282,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/black-leather-choker-necklace-mobile.webp 1x, img/black-leather-choker-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/black-leather-choker-necklace-tablet.webp 1x, img/black-leather-choker-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/black-leather-choker-necklace-desktop.webp 1x, img/black-leather-choker-necklace-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/black-leather-choker-necklace-desktop.jpg" width="270" height="272" alt="Черное кожаное колье">
             </picture>
             <p>Black leather choker</p>
@@ -260,7 +295,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/purple-gemstone-necklace-tablet.webp 1x, img/purple-gemstone-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с аметистом">
             </picture>
             <p>Necklace with amethyst</p>
@@ -268,7 +308,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/elephant-earrings-mobile.webp 1x, img/elephant-earrings-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/elephant-earrings-tablet.webp 1x, img/elephant-earrings-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/elephant-earrings-desktop.webp 1x, img/elephant-earrings-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/elephant-earrings-desktop.jpg" width="270" height="272" alt="Сережки в виде слоников">
             </picture>
             <p>Elephant earrings</p>
@@ -276,7 +321,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/threader-necklace-closeup-mobile.webp 1x, img/threader-necklace-closeup-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/threader-necklace-closeup-tablet.webp 1x, img/threader-necklace-closeup-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/threader-necklace-closeup-desktop.webp 1x, img/threader-necklace-closeup-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/threader-necklace-closeup-desktop.jpg" width="270" height="272" alt="Нитевидное ожерелье">
             </picture>
             <p>Threader necklace</p>
@@ -284,7 +334,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/origami-crane-necklace-mobile.webp 1x, img/origami-crane-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/origami-crane-necklace-tablet.webp 1x, img/origami-crane-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/origami-crane-necklace-desktop.webp 1x, img/origami-crane-necklace-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/origami-crane-necklace-desktop.jpg" width="270" height="272" alt="Ожерелье с оригами журавлика">
             </picture>
             <p>Origami crane necklace</p>
@@ -292,7 +347,12 @@
           </li>
           <li class="catalog-filter__product-item">
             <picture>
-              <source srcset="">
+              <!-- 1x: 130px; 2x: 260px -->
+              <source type="image/webp" srcset="img/marble-earrings-mobile.webp 1x, img/marble-earrings-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1x: 206px; 2x: 412px -->
+              <source type="image/webp" srcset="img/marble-earrings-tablet.webp 1x, img/marble-earrings-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/marble-earrings-desktop.webp 1x, img/marble-earrings-desktop.webp 2x">
+              <!-- 1x: 270px; 2x: 540px-->
               <img src="img/marble-earrings-desktop.jpg" width="270" height="272" alt="Серьги из мрамора">
             </picture>
             <p>Marble earrings</p>

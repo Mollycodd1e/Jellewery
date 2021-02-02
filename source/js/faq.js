@@ -18,8 +18,10 @@
           question.classList.add('main-faq__faq-wrapper--close');
         }
 
-        openTab.classList.remove('main-faq__faq-wrapper--open');
-        openTab.classList.add('main-faq__faq-wrapper--close');
+        if (openTab) {
+          openTab.classList.remove('main-faq__faq-wrapper--open');
+          openTab.classList.add('main-faq__faq-wrapper--close');
+        }
       });
     };
 
