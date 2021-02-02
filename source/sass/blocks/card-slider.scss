@@ -1,0 +1,18 @@
+.card-slider {
+  padding-top: 80px;
+  padding-bottom: 125px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .card-slider {
+    padding-top: 30px;
+    padding-bottom: 74px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .card-slider {
+    padding-top: 16px;
+    padding-bottom: 48px;
+  }
+}

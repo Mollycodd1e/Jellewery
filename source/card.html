@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Подробное описание товара">
+  <title>Карточка товара</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <div class="body-wrapper">
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="main-header">
+    <nav class="main-nav main-nav--card main-nav--closed">
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__form-wrapper main-nav__form-wrapper--card">
+          <form>
+            <button type="submit">
+              <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-magnifier"></use>
+              </svg>
+            </button>
+            <label class="visually-hidden">Форма поиска по сайту</label>
+            <input type="search" placeholder="Type here to search">
+          </form>
+        </div>
+        <a class="main-nav__logo" href="index.html">
+          <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </a>
+        <a class="main-nav__cart-svg" href="#">
+          <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+        </a>
+        <ul class="main-nav__user-list main-nav__user-list--card">
+          <li class="main-nav__user-item">
+            <a href="#">Login</a>
+          </li>
+          <li class="main-nav__user-item">
+            <a class="main-nav__cart" href="#">
+              Cart<span>0</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__menu-list-wrapper main-nav__menu-list-wrapper--card">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item">
+              <a href="#">What's new</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="#">Chokers</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="#">Necklaces</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="#">Rings</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="#">Earrings</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__contact-list">
+          <li class="main-nav__contact-item">
+            <a href="#">About CH</a>
+          </li>
+          <li class="main-nav__contact-item">
+            <a href="#">Stores & Hours</a>
+          </li>
+          <li class="main-nav__contact-item">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="card">
+    <section class="product-card">
+      <div class="product-card__wrapper">
+        <div class="product-card__photo-wrapper">
+          <div class="product-card__mini-photo-wrapper">
+            <picture>
+              <!-- 1x: 97px; 2x: 194px -->
+              <source type="image/webp" srcset="img/gold-necklace-for-women-tablet.webp 1x, img/gold-necklace-for-women-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/gold-necklace-for-women-desktop.webp 1x, img/gold-necklace-for-women-desktop@2x.webp 2x">
+              <!-- 1x: 100px; 2x: 200px -->
+              <img src="img/gold-necklace-for-women-desktop.jpg" width="100" height="125" alt="Фотография ожерелья на девушке">
+            </picture>
+            <picture>
+              <!-- 1x: 97px; 2x: 194px -->
+              <source type="image/webp" srcset="img/pretty-gold-necklace-tablet.webp 1x, img/pretty-gold-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/pretty-gold-necklace-desktop.webp 1x, img/pretty-gold-necklace-desktop@2x.webp 2x">
+              <!-- 1x: 100px; 2x: 200px -->
+              <img src="img/pretty-gold-necklace-desktop.jpg" width="100" height="125" alt="Фотография ожерелья">
+            </picture>
+            <picture>
+              <!-- 1x: 97px; 2x: 194px -->
+              <source type="image/webp" srcset="img/womens-necklace-set-tablet.webp 1x, img/womens-necklace-set-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/womens-necklace-set-desktop.webp 1x, img/womens-necklace-set-desktop@2x.webp 2x">
+              <!-- 1x: 100px; 2x: 200px -->
+              <img src="img/womens-necklace-set-desktop.jpg" width="100" height="125" alt="Фотография ожерелья на девушке">
+            </picture>
+          </div>
+          <picture>
+            <!-- 1x: 290px; 2x: 580px -->
+            <source type="image/webp" srcset="img/necklace-detail-mobile.webp 1x, img/necklace-detail-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <!-- 1x: 319px; 2x: 638px -->
+            <source type="image/webp" srcset="img/necklace-detail-tablet.webp 1x, img/necklace-detail-tablet@2x.webp 2x" media="(max-width: 1023px)">
+            <source type="image/webp" srcset="img/necklace-detail-desktop.webp 1x, img/necklace-detail-desktop@2x.webp 2x">
+            <!-- 1x: 470px; 2x: 940px -->
+            <img src="img/necklace-detail-desktop.jpg" width="470" height="435" alt="Фотография ожерелья в деталях">
+          </picture>
+          <p>1 of 4</p>
+        </div>
+        <div class="product-card__description-wrapper">
+          <h3>Gold Necklace</h3>
+          <p>$ 115</p>
+          <div class="product-card__description">
+            <div class="product-card-title-wrapper">
+              <span>Description</span>
+              <h2>Additional info</h2>
+            </div>
+            <p>Metal type <span>Gold 585</span></p>
+            <p>Stone <span>Turquoise</span></p>
+            <p>Size <span>18” / 20”</span></p>
+          </div>
+          <button type="button">Add to cart</button>
+          <div class="product-cart__options">
+            <span>14 Day Returns</span>
+            <span>2-Year Warranty</span>
+            <span>Free Shipping</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="card-slider">
+      <div class="card-slider__wrapper main-new__wrapper">
+        <div class="main-new__back-button-wrapper main-new__back-button-wrapper--card">
+          <button type="button">
+            <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-slider-arrow-left"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="main-new__title-wrapper main-new__title-wrapper--card">
+          <h2>You May Also Like</h2>
+          <a href="catalog.html">Shop Now</a>
+        </div>
+        <div class="main-new__forward-button-wrapper main-new__forward-button-wrapper--card">
+          <button type="button">
+            <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-slider-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="main-new__product-list-wrapper main-new__product-list-wrapper--card">
+          <ul class="main-new__product-list">
+            <li class="main-new__product-item">
+              <picture>
+                <!-- 1x: 130px; 2x: 260px -->
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <!-- 1x: 324px; 2x: 648px -->
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-tablet.webp 1x, img/purple-gemstone-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+                <!-- 1x: 270px; 2x: 540px -->
+                <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+              </picture>
+              <p>Necklace with amethyst</p>
+              <span>$ 145</span>
+            </li>
+            <li class="main-new__product-item">
+              <picture>
+                <!-- 1x: 130px; 2x: 260px -->
+                <source type="image/webp" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <!-- 1x: 324px; 2x: 648px -->
+                <source type="image/webp" srcset="img/layered-choker-necklace-tablet.webp 1x, img/layered-choker-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                <!-- 1x: 270px; 2x: 540px -->
+                <img src="img/layered-choker-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+              </picture>
+              <p>Layered сhoker</p>
+              <span>$ 115</span>
+            </li>
+            <li class="main-new__product-item">
+              <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
+                <!-- 1x: 270px; 2x: 540px -->
+                <img src="img/dainty-gold-necklace-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+              </picture>
+              <p>Gold chain</p>
+              <span>$ 215</span>
+            </li>
+            <li class="main-new__product-item">
+              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                <!-- 1x: 270px; 2x: 540px -->
+                <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+              </picture>
+              <p>Galaxy earrings</p>
+              <span>$ 95</span>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-new__page-list">
+          <li class="main-new__page-item main-new__page-item--active">
+            <span>1</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>2</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>3</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>4</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>5</span>
+          </li>
+          <li class="main-new__page-item">
+            <span>6</span>
+          </li>
+        </ul>
+        <div class="main-new__mobile-page-wrapper">
+          <ul class="main-new__mobile-page-list">
+            <li class="main-new__mobile-page-item main-new__mobile-page-item--active">
+              <span>1</span>
+            </li>
+            <li class="main-new__mobile-page-item">
+              <span>2</span>
+            </li>
+            <li class="main-new__mobile-page-item">
+              <span>3</span>
+            </li>
+            <li class="main-new__mobile-page-item">
+              <span>4</span>
+            </li>
+            <li class="main-new__mobile-page-item">
+              <span>5</span>
+            </li>
+            <li class="main-new__mobile-page-item">
+              <span>6</span>
+            </li>
+          </ul>
+          <p>of 6</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+    <div class="main-footer__mail-wrapper">
+      <h2>The good stuff in&nbsp;your inbox</h2>
+      <p>News and updates from CH. Nospam, we promise.</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="email" name="E-mail" id="email" placeholder="Your E-mail">
+        <button class="interested__button button" type="submit">
+          <span class="interested__registration">Sign Up</span>
+        </button>
+      </form>
+    </div>
+    <div class="main-footer__lists-wrapper">
+      <ul class="main-footer__terms-list">
+        <li>
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li>
+          <a href="#">Delivery</a>
+        </li>
+      </ul>
+      <ul class="main-footer__contact-list">
+        <li>
+          <a href="#">About CH</a>
+        </li>
+        <li>
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li>
+          <a href="#">Jobs</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__social-wrapper">
+      <ul class="main-footer__social-list">
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <svg width="8" height="15" viewbox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <svg width="16" height="15" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-pinterest"></use>
+            </svg>
+            <span>Pinterest</span>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <svg width="15" height="13" viewbox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+            <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+  <script src="js/main.js"></script>
+  </div>
+</body>

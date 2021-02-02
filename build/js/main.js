@@ -73,22 +73,27 @@
 'use strict';
 
 (function () {
-  var newSection = document.querySelector('.main-new');
+  var filter = document.querySelector('.catalog-filter');
 
-  if (newSection) {
-    var back= newSection.querySelector('.main-new__back-button-wrapper');
-    var productList = newSection.querySelector('.main-new__product-list');
+  if (filter) {
+    var form = filter.querySelector('form');
+    var filterOptions = form.querySelectorAll('.catalog-filter__wrapper');
 
-    var slideBack = function (button) {
-      button.addEventListener('click', function () {
-        var widthNow = document.querySelector('.main-new__product-list').offsetWidth;
-        productList.style.transform = 'translate(-' + widthNow + 'px, 0)';
-        productList.style.transition = '1s';
+    var filterToggle = function (filterSection) {
+
+      filterSection.addEventListener('click', function () {
+        if (filterSection.classList.contains('catalog-filter__wrapper--closed')) {
+          filterSection.classList.remove('catalog-filter__wrapper--closed');
+          filterSection.classList.add('catalog-filter__wrapper--opened');
+        } else {
+          filterSection.classList.remove('catalog-filter__wrapper--opened');
+          filterSection.classList.add('catalog-filter__wrapper--closed');
+        }
       });
-    }
+    };
 
-    for (var i = 1; i < 9999999999; i++) {
-      slideBack(back);
+    for (var i = 0; i < filterOptions.length; i++) {
+      filterToggle(filterOptions[i]);
     }
   }
 })();

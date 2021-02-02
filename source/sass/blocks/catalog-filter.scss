@@ -120,7 +120,7 @@
   margin-bottom: 9px;
 }
 
-.catalog-filter__wrapper--close ul {
+.catalog-filter__wrapper--closed ul {
   display: none;
 }
 
@@ -158,6 +158,14 @@
   height: 15px;
   box-sizing: border-box;
   border: 1px solid #a87b62;
+}
+
+.catalog-filter__wrapper--closed .catalog-filter__slider-wrapper {
+  display: none;
+}
+
+.catalog-filter__wrapper--opened .catalog-filter__slider-wrapper {
+  display: block;
 }
 
 .catalog-filter__title-wrapper {
@@ -595,7 +603,7 @@
     margin-bottom: 17px;
   }
 
-  .catalog-filter__wrapper--close ul {
+  .catalog-filter__wrapper--closed ul {
     display: none;
   }
 
@@ -849,7 +857,7 @@
     margin-bottom: 17px;
   }
 
-  .catalog-filter__wrapper--close ul {
+  .catalog-filter__wrapper--closed ul {
     display: none;
   }
 
