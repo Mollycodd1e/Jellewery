@@ -27,6 +27,16 @@
   background-color: #ffffff;
 }
 
+.modal__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  bottom: 195px;
+  background-color: #f6f5f4;
+}
+
 .modal__count-wrapper {
   margin-top: 45px;
   display: flex;
@@ -57,7 +67,7 @@
   width: 17px;
   height: 1px;
   background-color: #1d1613;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
 
 
@@ -69,7 +79,7 @@
   width: 17px;
   height: 1px;
   background-color: #1d1613;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 .modal__title-wrapper button:hover::after,
@@ -124,6 +134,7 @@
   height: 16px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .modal__button-wrapper button:nth-child(3n + 1) {
@@ -144,7 +155,7 @@
   height: 1px;
   top: 4px;
   left: 3px;
-  background-color: #9b9997;;
+  background-color: #9b9997;
 }
 
 .modal__button-wrapper button:nth-child(3n + 1)::after {
@@ -154,7 +165,7 @@
   height: 1px;
   top: 3px;
   left: 3px;
-  background-color: #9b9997;;
+  background-color: #9b9997;
   transform: rotate(90deg);
 }
 
@@ -175,7 +186,7 @@
   height: 1px;
   top: 5px;
   left: 3px;
-  background-color: #9b9997;;
+  background-color: #9b9997;
 }
 
 .modal__description-wrapper {
@@ -235,7 +246,7 @@
 .modal__link-wrapper a:nth-child(2n + 1):hover,
 .modal__link-wrapper a:nth-child(2n + 1):focus {
   background-color: #a87b62;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .modal__link-wrapper a:nth-child(2n + 2):hover,
@@ -243,4 +254,148 @@
   background-color: #ffffff;
   color: #a87b62;
   border: 1px solid #a87b62;
+}
+
+@media (max-width: $tablet-width-only) {
+  .modal {
+    top: 258px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .modal {
+    top: 117px;
+  }
+
+  .modal__wrapper {
+    padding-top: 37px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 290px;
+    min-height: 519px;
+  }
+
+  .modal__wrapper::after {
+    bottom: 300px;
+  }
+
+  .modal__count-wrapper img {
+    width: 70px;
+    height: 63px;
+  }
+
+  .modal__count-wrapper {
+    margin-top: 35px;
+    display: flex;
+  }
+
+  .modal__title-wrapper button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .modal__wrapper h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .modal__product-title-wrapper {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  .modal__product-title-wrapper h3 {
+    margin: 0;
+    margin-top: -5px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .modal__product-title-wrapper p {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .modal__button-wrapper {
+    position: relative;
+    width: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal__button-wrapper button {
+    position: relative;
+    width: 15px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .modal__button-wrapper button:nth-child(3n + 1) {
+    margin-bottom: 10px;
+  }
+
+
+  .modal__button-wrapper button:nth-child(3n + 3) {
+    margin-top: auto;
+    margin-bottom: -6px;
+  }
+
+  .modal__description-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal__description-wrapper button {
+    top: auto;
+    right: auto;
+    width: 12px;
+  }
+
+  .modal__description-wrapper span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal__description-wrapper p {
+    margin: 0;
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal__link-wrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal__wrapper a {
+    display: block;
+    width: 260px;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .modal__wrapper a:nth-child(2n + 2) {
+    margin-top: 18px;
+  }
 }

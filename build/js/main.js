@@ -41,28 +41,6 @@
 'use strict';
 
 (function () {
-
-  var filterSection = document.querySelector('.catalog-filter');
-
-  if (filterSection) {
-    var filterButton = filterSection.querySelector('.catalog-filter__filter-button');
-
-    filterButton.addEventListener('click', function () {
-
-      if (filterSection.classList.contains('catalog-filter--closed')) {
-        filterSection.classList.remove('catalog-filter--closed');
-        filterSection.classList.add('catalog-filter--opened');
-      } else {
-        filterSection.classList.remove('catalog-filter--opened');
-        filterSection.classList.add('catalog-filter--closed');
-      }
-    });
-  }
-})();
-
-'use strict';
-
-(function () {
   var mainFaq = document.querySelector('.main-faq');
 
   if (mainFaq) {
@@ -100,9 +78,20 @@
 
   if (catalog) {
     var closeButton = catalog.querySelector('.catalog-filter__form-button');
+    var filterButton = filterSection.querySelector('.catalog-filter__filter-button');
 
     closeButton.addEventListener('click', function () {
       if (catalog.classList.contains('catalog-filter--opened')) {
+        catalog.classList.remove('catalog-filter--opened');
+        catalog.classList.add('catalog-filter--closed');
+      }
+    });
+
+    filterButton.addEventListener('click', function () {
+      if (catalog.classList.contains('catalog-filter--closed')) {
+        catalog.classList.remove('catalog-filter--closed');
+        catalog.classList.add('catalog-filter--opened');
+      } else {
         catalog.classList.remove('catalog-filter--opened');
         catalog.classList.add('catalog-filter--closed');
       }
@@ -135,6 +124,51 @@
     for (var i = 0; i < filterOptions.length; i++) {
       filterToggle(filterOptions[i]);
     }
+  }
+})();
+
+'use strict';
+
+(function () {
+  var login = document.querySelector('.login-modal');
+
+  if (login) {
+    var logInButton = document.querySelector('.main-nav__user-item:nth-child(2n + 1) a');
+    var closeLoginButton = login.querySelector('.login-modal__close-button-wrapper button');
+    var whiteLayer = login.querySelector('.login-modal__white-layer');
+    var mailInput = login.querySelector('input[name=E-mail]');
+
+    login.addEventListener('submit', function () {
+      localStorage.setItem('Mail', mailInput.value);
+    });
+
+    whiteLayer.addEventListener('click', function () {
+      if (login.classList.contains('login-modal--opened')) {
+        login.classList.remove('login-modal--opened');
+        login.classList.add('login-modal--closed');
+      }
+    });
+
+    logInButton.addEventListener('click', function () {
+      if (login.classList.contains('login-modal--closed')) {
+        login.classList.remove('login-modal--closed');
+        login.classList.add('login-modal--opened');
+      }
+    });
+
+    closeLoginButton.addEventListener('click', function () {
+      if (login.classList.contains('login-modal--opened')) {
+        login.classList.remove('login-modal--opened');
+        login.classList.add('login-modal--closed');
+      }
+    });
+
+    document.addEventListener('keydown', function (evt) {
+      if ((evt.key === 'Escape') && (login.classList.contains('login-modal--opened'))) {
+        login.classList.remove('login-modal--opened');
+        login.classList.add('login-modal--closed');
+      }
+    });
   }
 })();
 

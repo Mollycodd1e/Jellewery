@@ -7,3 +7,15 @@
   opacity: 0.25;
   z-index: 90;
 }
+
+@media (max-width: $tablet-width-only) {
+  .black-background {
+    top: -258px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .black-background {
+    top: -117px;
+  }
+}
