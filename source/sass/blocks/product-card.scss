@@ -117,6 +117,16 @@
   background-color: #a87b62;
 }
 
+.product-card__description-wrapper button:hover,
+.product-card__description-wrapper button:focus {
+  border: 1px solid #a87b62;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: #ffffff;
+  color: #a87b62;
+  cursor: pointer;
+}
+
 .product-cart__options span {
   font-size: 14px;
   line-height: 18px;
