@@ -7,34 +7,37 @@
     var closeButton = modal.querySelector('.modal__title-wrapper button');
     var addToCartButton = document.querySelector('.product-card__description-wrapper a');
     var blackLayer = modal.querySelector('.black-background');
+    var bodyPage = document.querySelector('body');
 
     addToCartButton.href = '#';
 
-    var modalOpening = function (window) {
+    var modalClosing = function (window, back) {
       if (window.classList.contains('modal--opened')) {
         window.classList.remove('modal--opened');
         window.classList.add('modal--closed');
+        back.classList.remove('scroll-hidden');
       }
     };
 
     blackLayer.addEventListener('click', function () {
-      modalOpening(modal);
+      modalClosing(modal, bodyPage);
     });
 
     closeButton.addEventListener('click', function () {
-      modalOpening(modal);
+      modalClosing(modal, bodyPage);
     });
 
     addToCartButton.addEventListener('click', function () {
       if (modal.classList.contains('modal--closed')) {
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
+        bodyPage.classList.add('scroll-hidden');
       }
     });
 
     document.addEventListener('keydown', function (evt) {
       if ((evt.key === 'Escape')) {
-        modalOpening(modal);
+        modalClosing(modal, bodyPage);
       }
     });
   }
@@ -152,6 +155,7 @@
     var closeLoginButton = login.querySelector('.login-modal__close-button-wrapper button');
     var whiteLayer = login.querySelector('.login-modal__white-layer');
     var mailInput = login.querySelector('input[name=E-mail]');
+    var bodyTag = document.querySelector('body');
 
     logInButton.href = '#';
 
@@ -159,32 +163,34 @@
       localStorage.setItem('Mail', mailInput.value);
     });
 
-    var loginClosing = function (registration) {
+    var loginClosing = function (registration, ground) {
       if (registration.classList.contains('login-modal--opened')) {
         registration.classList.remove('login-modal--opened');
         registration.classList.add('login-modal--closed');
+        ground.classList.remove('scroll-hidden');
       }
     };
 
     whiteLayer.addEventListener('click', function () {
-      loginClosing(login);
+      loginClosing(login, bodyTag);
     });
 
     logInButton.addEventListener('click', function () {
       if (login.classList.contains('login-modal--closed')) {
         login.classList.remove('login-modal--closed');
         login.classList.add('login-modal--opened');
+        bodyTag.classList.add('scroll-hidden');
         mailInput.focus();
       }
     });
 
     closeLoginButton.addEventListener('click', function () {
-      loginClosing(login);
+      loginClosing(login, bodyTag);
     });
 
     document.addEventListener('keydown', function (evt) {
       if ((evt.key === 'Escape')) {
-        loginClosing(login);
+        loginClosing(login, bodyTag);
       }
     });
   }

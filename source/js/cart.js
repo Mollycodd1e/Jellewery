@@ -7,34 +7,37 @@
     var closeButton = modal.querySelector('.modal__title-wrapper button');
     var addToCartButton = document.querySelector('.product-card__description-wrapper a');
     var blackLayer = modal.querySelector('.black-background');
+    var bodyPage = document.querySelector('body');
 
     addToCartButton.href = '#';
 
-    var modalOpening = function (window) {
+    var modalClosing = function (window, back) {
       if (window.classList.contains('modal--opened')) {
         window.classList.remove('modal--opened');
         window.classList.add('modal--closed');
+        back.classList.remove('scroll-hidden');
       }
     };
 
     blackLayer.addEventListener('click', function () {
-      modalOpening(modal);
+      modalClosing(modal, bodyPage);
     });
 
     closeButton.addEventListener('click', function () {
-      modalOpening(modal);
+      modalClosing(modal, bodyPage);
     });
 
     addToCartButton.addEventListener('click', function () {
       if (modal.classList.contains('modal--closed')) {
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
+        bodyPage.classList.add('scroll-hidden');
       }
     });
 
     document.addEventListener('keydown', function (evt) {
       if ((evt.key === 'Escape')) {
-        modalOpening(modal);
+        modalClosing(modal, bodyPage);
       }
     });
   }
