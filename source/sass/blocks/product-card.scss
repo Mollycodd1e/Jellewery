@@ -103,7 +103,8 @@
   margin-top: 17px;
 }
 
-.product-card__description-wrapper button {
+.product-card__description-wrapper a {
+  display: block;
   width: 100%;
   margin-top: 59px;
   padding-top: 24px;
@@ -113,6 +114,8 @@
   font-weight: 500;
   letter-spacing: 0.05em;
   border: none;
+  text-align: center;
+  text-decoration: none;
   color: #ffffff;
   background-color: #a87b62;
 }
@@ -248,7 +251,7 @@
     margin-left: 39px;
   }
 
-  .product-card__description-wrapper button {
+  .product-card__description-wrapper a {
     margin-top: 49px;
   }
 }

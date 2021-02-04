@@ -13,11 +13,21 @@
   .main-header--opened {
     padding-top: 126px;
   }
+
+  .main-header--nojs {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
   .main-header {
     padding-left: 4.69%;
     padding-right: 4.69%;
+  }
+
+  .main-header--nojs {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

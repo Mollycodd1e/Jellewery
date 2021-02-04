@@ -124,21 +124,18 @@
   margin-right: 5px;
   margin-bottom: 10px;
   cursor: pointer;
+  overflow: hidden;
 }
 
-.main-new__product-item picture {
+.main-new__product-item img {
+  width: 270px;
+  height: 284px;
   display: block;
-  overflow: hidden;
 }
 
 .main-new__product-item:hover p,
 .main-new__product-item:hover span {
   color: #a87b62;
-}
-
-.main-new__product-item:hover img {
-  transform: scale(1.1);
-  transition: 1s;
 }
 
 .main-new__product-list p {

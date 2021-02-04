@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Логин магазина украшений">
+  <title>Логин</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <div class="body-wrapper">
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <section class="login-modal">
+      <div class="login-modal__wrapper">
+        <div class="login-modal__close-button-wrapper">
+          <button type="button"></button>
+          <img src="img/login-desktop.jpg" width="430" height="138" alt="Фото украшений">
+        </div>
+        <h2>Log In</h2>
+        <div class="login-modal__mail-wrapper">
+          <input type="email" name="E-mail" id="login-email" placeholder="Your E-mail" required>
+          <label for="login-email" class="visually-hidden">Почта</label>
+        </div>
+        <div class="login-modal__password-wrapper">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <label for="password" class="visually-hidden">Пароль</label>
+          <a href="#">Forgot your password?</a>
+        </div>
+        <div class="login-modal__submit-wrapper">
+          <button type="submit">Log In</button>
+          <p>Don’t have an account?<a href="#">Sign up</a></p>
+        </div>
+      </div>
+      <section class="login-modal__white-layer">
+      </section>
+    </section>
+  </div>
+</body>

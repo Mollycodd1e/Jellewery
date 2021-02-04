@@ -7,6 +7,8 @@
     var closeButton = catalog.querySelector('.catalog-filter__form-button');
     var filterButton = catalog.querySelector('.catalog-filter__filter-button');
 
+    catalog.classList.remove('catalog-filter--nojs');
+
     closeButton.addEventListener('click', function () {
       if (catalog.classList.contains('catalog-filter--opened')) {
         catalog.classList.remove('catalog-filter--opened');

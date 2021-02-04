@@ -514,31 +514,47 @@
     fill: #ffffff;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
-    display: flex;
-  }
-
-  .main-nav--nojs .main-nav__form-wrapper {
-    display: flex;
+  .main-nav--nojs {
     width: 100%;
     left: 0;
     top: 0;
-    position: absolute;
+    position: relative;
     min-height: 778px;
     padding-left: 5.86%;
     padding-right: 5.86%;
     background-color: #a87b62;
-    z-index: 15;
+    z-index: 100;
+  }
+
+  .main-nav--nojs .main-nav__logo {
+    order: 2;
+    z-index: 5;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: flex;
+    z-index: 5;
   }
 
   .main-nav--nojs .main-nav__user-list {
     display: block;
+    z-index: 5;
+    order: 7;
+    margin: 0;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 45px;
+    width: 100%;
     color: #ffffff;
   }
 
-  .main-nav--nojs .main-nav__menu-list-wrapper {
+  .main-nav--nojs .main-nav__form-wrapper {
+    order: 4;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 25px;
     display: block;
-    color: #ffffff;
+    z-index: 5;
   }
 
   .main-nav--nojs .main-nav__toggle {
@@ -553,29 +569,25 @@
       0 16px 0  #ffffff;
   }
 
-  .main-nav--nojs .main-nav__cart-svg {
-    order: 3;
-    display: block;
-    margin-top: 4px;
-    align-self: center;
-  }
-  .main-nav--nojs .main-nav__form-wrapper {
-    display: block;
-    z-index: 5;
-  }
-
-  .main-nav--nojs .main-nav__user-list {
-    display: block;
-    z-index: 5;
+  .main-nav--nojs form {
+    width: 100%;
   }
 
   .main-nav--nojs .main-nav__menu-list-wrapper {
+    order: 5;
     display: block;
     z-index: 5;
+    margin-top: 46px;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
-    z-index: 5;
+  .main-nav--nojs .main-nav__menu-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    line-height: 36px;
+    flex-direction: column;
   }
 
   .main-nav-nojs .main-nav__toggle::before {
@@ -591,11 +603,6 @@
       0 16px 0  #ffffff;
   }
 
-  .main-nav--nojs .main-nav__logo {
-    order: 2;
-    z-index: 5;
-  }
-
   .main-nav--nojs .main-nav__cart-svg {
     order: 3;
     display: block;
@@ -604,9 +611,26 @@
     z-index: 5;
   }
 
+  .main-nav--nojs .main-nav__contact-list {
+    order: 6;
+    display: block;
+  }
+
+  .main-nav--nojs input {
+    width: 100%;
+    height: 40px;
+    padding-left: 28px;
+    border-radius: 21px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
   .main-nav--nojs svg {
     fill: none;
     stroke: #ffffff;
+  }
+
+  .main-nav--nojs .main-nav__cart {
+    display: none;
   }
 }
 

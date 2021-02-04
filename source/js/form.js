@@ -7,6 +7,10 @@
     var form = filter.querySelector('form');
     var filterOptions = form.querySelectorAll('.catalog-filter__wrapper');
 
+    for (var j = 0; j < filterOptions.length; j++) {
+      filterOptions[j].classList.remove('catalog-filter__wrapper--nojs');
+    }
+
     var filterToggle = function (filterSection) {
 
       filterSection.addEventListener('click', function () {

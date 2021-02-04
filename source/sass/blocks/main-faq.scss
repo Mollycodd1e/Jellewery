@@ -114,6 +114,18 @@
   display: none;
 }
 
+.main-faq__faq-wrapper--nojs p {
+  display: block;
+}
+
+.main-faq__faq-wrapper--nojs button::before {
+  transform: rotate(-45deg);
+}
+
+.main-faq__faq-wrapper--nojs button::after {
+  transform: rotate(45deg);
+}
+
 @media (max-width: $tablet-width-only) {
   .main-faq {
     padding-left: 5.86%;

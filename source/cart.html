@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Корзина покупок магазина украшений">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <div class="body-wrapper">
+    <div style="display:none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__title-wrapper">
+          <button type="button"></button>
+          <h2>The item was added to&nbsp;your cart</h2>
+        </div>
+        <div class="modal__count-wrapper">
+          <picture>
+            <!-- 1x: 70px; 2x: 140px -->
+            <source type="image/webp" srcset="img/necklace-detail-cart-mobile.webp 1x, img/necklace-detail-cart-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <!-- 1x: 88px; 2x: 176px -->
+            <source type="image/webp" srcset="img/necklace-detail-cart-tablet.webp 1x, img/necklace-detail-cart-tablet@2x.webp 2x" media="(max-width: 1023px)">
+            <source type="image/webp" srcset="img/necklace-detail-cart-desktop.webp 1x, img/necklace-detail-cart-desktop@2x.webp 2x">
+            <!-- 1x: 84px; 2x: 168px -->
+            <img src="img/necklace-detail-cart-desktop.jpg" width="84" height="79" alt="Фотография товара в корзине">
+          </picture>
+          <div class="modal__product-title-wrapper">
+            <h3>Gold Necklace</h3>
+            <p>$ 115</p>
+          </div>
+          <div class="modal__button-wrapper">
+            <button type="button"></button>
+            <span>1</span>
+            <button type="button"></button>
+          </div>
+        </div>
+        <div class="modal__description-wrapper">
+          <span>You have 1 item in the cart</span>
+          <p>Cart subtotal: $ 115</p>
+        </div>
+        <div class="modal__link-wrapper">
+          <a href="catalog.html">Continue shopping</a>
+          <a href="#">Checkout</a>
+        </div>
+      </div>
+      <section class="black-background">
+      </section>
+    </section>
+  </div>
+</body>

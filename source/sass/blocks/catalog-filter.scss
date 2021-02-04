@@ -447,6 +447,22 @@
   color: #1d1613;
 }
 
+.catalog-filter__wrapper--nojs .catalog-filter__slider-wrapper {
+  display: block;
+}
+
+.catalog-filter__wrapper--nojs button::before {
+  transform: rotate(-45deg);
+}
+
+.catalog-filter__wrapper--nojs button::after {
+  transform: rotate(45deg);
+}
+
+.catalog-filter__wrapper--nojs ul {
+  display: block;
+}
+
 @media (max-width: $tablet-width-only) {
   .catalog-filter {
     position: relative;
@@ -750,6 +766,14 @@
     margin: 0 auto;
     margin-top: 36px;
   }
+
+  .catalog-filter__wrapper--nojs ul {
+    display: block;
+  }
+
+  .catalog-filter--nojs .catalog-filter__form-wrapper {
+    display: block;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -1025,5 +1049,9 @@
 
   .catalog-filter--opened .catalog-filter__form-wrapper {
     margin-top: 11px;
+  }
+
+  .catalog-filter__wrapper--nojs ul {
+    display: block;
   }
 }
