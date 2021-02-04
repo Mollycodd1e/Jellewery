@@ -78,7 +78,7 @@
 
   if (catalog) {
     var closeButton = catalog.querySelector('.catalog-filter__form-button');
-    var filterButton = filterSection.querySelector('.catalog-filter__filter-button');
+    var filterButton = catalog.querySelector('.catalog-filter__filter-button');
 
     closeButton.addEventListener('click', function () {
       if (catalog.classList.contains('catalog-filter--opened')) {
@@ -153,6 +153,7 @@
       if (login.classList.contains('login-modal--closed')) {
         login.classList.remove('login-modal--closed');
         login.classList.add('login-modal--opened');
+        mailInput.focus();
       }
     });
 
@@ -182,7 +183,9 @@
     var header = document.querySelector('.main-header');
 
     header.classList.remove('main-header--opened');
+    navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {

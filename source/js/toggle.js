@@ -8,7 +8,9 @@
     var header = document.querySelector('.main-header');
 
     header.classList.remove('main-header--opened');
+    navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {

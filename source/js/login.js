@@ -24,6 +24,7 @@
       if (login.classList.contains('login-modal--closed')) {
         login.classList.remove('login-modal--closed');
         login.classList.add('login-modal--opened');
+        mailInput.focus();
       }
     });
 
