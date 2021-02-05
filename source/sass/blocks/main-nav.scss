@@ -590,19 +590,6 @@
     flex-direction: column;
   }
 
-  .main-nav-nojs .main-nav__toggle::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 0  #ffffff,
-      0 16px 0  #ffffff;
-  }
-
   .main-nav--nojs .main-nav__cart-svg {
     order: 3;
     display: block;
