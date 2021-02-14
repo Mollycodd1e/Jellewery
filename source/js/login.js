@@ -46,5 +46,19 @@
         loginClosing(login, bodyTag);
       }
     });
+
+    document.addEventListener('keydown', function (evttab) {
+      if ((evttab.key === 'Tab') && (login.classList.contains('login-modal--opened')) && (document.activeElement === closeLoginButton)) {
+        mailInput.focus();
+        evttab.preventDefault();
+      }
+    });
+
+    document.addEventListener('keydown', function (evtshift) {
+      if ((evtshift.shiftKey && evtshift.key === 'Tab') && (login.classList.contains('login-modal--opened')) && (document.activeElement === mailInput)) {
+        closeLoginButton.focus();
+        evtshift.preventDefault();
+      }
+    });
   }
 })();

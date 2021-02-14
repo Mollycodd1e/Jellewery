@@ -101,7 +101,8 @@
 
 .main-new__product-list-wrapper {
   margin-top: 59px;
-  width: 1170px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .main-new__product-list-wrapper--card {
@@ -110,21 +111,25 @@
 
 .main-new__product-list {
   padding: 0;
-  max-width: 1170px;
+  width: 100%;
   height: 358px;
-  overflow: hidden;
+  //overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
   margin: 0 auto;
 }
 
 .main-new__product-item {
-  margin-right: 5px;
+  min-width: 24.2%;
+  margin-right: 10px;
   margin-bottom: 10px;
   cursor: pointer;
   overflow: hidden;
+}
+
+.main-new__product-item a {
+  text-decoration: none;
 }
 
 .main-new__product-item img {
@@ -156,7 +161,7 @@
 }
 
 .main-new__product-list li:nth-child(4n + 4) {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 .main-new__page-list {
@@ -219,16 +224,26 @@
 
   .main-new__product-list-wrapper {
     margin-top: 54px;
-    width: 678px;
+    width: 100%;
     justify-content: space-between;
   }
 
   .main-new__product-list {
     height: 405px;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .main-new__product-list p {
     margin-top: 20px;
+  }
+
+  .main-new__back-button-wrapper--card button {
+    margin-left: 0;
+  }
+
+  .main-new__title-wrapper--card {
+    margin-left: 37px;
   }
 
   .main-new__product-item:nth-child(2n + 1) p {
@@ -244,6 +259,10 @@
     display: block;
     width: 324px;
     height: 340px;
+  }
+
+  .main-new__product-item {
+    width: 48%;
   }
 
   .main-new__wrapper {
@@ -294,21 +313,28 @@
   }
 
   .main-new__wrapper {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .main-new__product-list-wrapper {
     margin-top: 44px;
+    max-width: 100%;
   }
 
   .main-new__product-list {
     height: 225px;
-    max-width: 290px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .main-new__product-item {
+    width: 48%;
   }
 
   .main-new__product-list img {
     width: 130px;
     height: 136px;
+    margin: 0 auto;
   }
 
   .main-new__title-wrapper a {
@@ -317,6 +343,7 @@
 
   .main-new__product-list p {
     width: 130px;
+    margin: 0 auto;
     margin-top: 16px;
   }
 

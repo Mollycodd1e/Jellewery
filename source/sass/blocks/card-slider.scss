@@ -1,12 +1,16 @@
 .card-slider {
   padding-top: 80px;
   padding-bottom: 125px;
+  padding-left: 7.2%;
+  padding-right: 7.2%;
 }
 
 @media (max-width: $tablet-width-only) {
   .card-slider {
     padding-top: 30px;
     padding-bottom: 74px;
+    padding-left: 5.86%;
+    padding-right: 5.86%;
   }
 }
 
@@ -14,5 +18,7 @@
   .card-slider {
     padding-top: 16px;
     padding-bottom: 48px;
+    padding-left: 4.69%;
+    padding-right: 4.69%;
   }
 }

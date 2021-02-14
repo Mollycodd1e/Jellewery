@@ -14,21 +14,21 @@
     <div style="display:none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <header class="main-header">
-      <nav class="main-nav main-nav--card main-nav--closed">
+    <header class="main-header main-header--nojs">
+      <nav class="main-nav main-nav--card main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__form-wrapper main-nav__form-wrapper--card">
             <form>
-              <button type="submit">
+              <button type="submit" aria-label="Кнопка поиска">
                 <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-magnifier"></use>
                 </svg>
               </button>
-              <label class="visually-hidden">Форма поиска по сайту</label>
-              <input type="search" placeholder="Type here to search">
+              <label for="id-search" class="visually-hidden">Форма поиска по сайту</label>
+              <input id="id-search" type="search" placeholder="Type here to search">
             </form>
           </div>
           <a class="main-nav__logo" href="index.html">
@@ -43,7 +43,7 @@
           </a>
           <ul class="main-nav__user-list main-nav__user-list--card">
             <li class="main-nav__user-item">
-              <a href="#">Login</a>
+              <a href="login.html">Login</a>
             </li>
             <li class="main-nav__user-item">
               <a class="main-nav__cart" href="#">
@@ -85,6 +85,7 @@
       </nav>
     </header>
     <main class="card">
+      <h1 class="visually-hidden">Карточка товара</h1>
       <section class="product-card">
         <div class="product-card__wrapper">
           <div class="product-card__photo-wrapper">
@@ -147,10 +148,11 @@
           </div>
         </div>
       </section>
-      <section class="card-slider">
-        <div class="card-slider__wrapper main-new__wrapper">
+      <section class="card-slider main-new">
+        <div class="main-new__wrapper">
           <div class="main-new__back-button-wrapper main-new__back-button-wrapper--card">
             <button type="button">
+              <span class="visually-hidden">Кнопка пролистывания слайдера влево</span>
               <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-slider-arrow-left"></use>
               </svg>
@@ -162,6 +164,7 @@
           </div>
           <div class="main-new__forward-button-wrapper main-new__forward-button-wrapper--card">
             <button type="button">
+              <span class="visually-hidden">Кнопка пролистывания слайдера вправо</span>
               <svg width="29" height="9" viewBox="0 0 29 9" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-slider-arrow-right"></use>
               </svg>
@@ -170,52 +173,60 @@
           <div class="main-new__product-list-wrapper main-new__product-list-wrapper--card">
             <ul class="main-new__product-list">
               <li class="main-new__product-item">
-                <picture>
-                  <!-- 1x: 130px; 2x: 260px -->
-                  <source type="image/webp" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
-                  <!-- 1x: 324px; 2x: 648px -->
-                  <source type="image/webp" srcset="img/purple-gemstone-necklace-tablet.webp 1x, img/purple-gemstone-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-                </picture>
-                <p>Necklace with amethyst</p>
-                <span>$ 145</span>
+                <a href="#">
+                  <picture>
+                    <!-- 1x: 130px; 2x: 260px -->
+                    <source type="image/webp" srcset="img/purple-gemstone-necklace-mobile.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <!-- 1x: 324px; 2x: 648px -->
+                    <source type="image/webp" srcset="img/purple-gemstone-necklace-tablet.webp 1x, img/purple-gemstone-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+                  </picture>
+                  <p>Necklace with amethyst</p>
+                  <span>$ 145</span>
+                </a>
               </li>
               <li class="main-new__product-item">
-                <picture>
-                  <!-- 1x: 130px; 2x: 260px -->
-                  <source type="image/webp" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
-                  <!-- 1x: 324px; 2x: 648px -->
-                  <source type="image/webp" srcset="img/layered-choker-necklace-tablet.webp 1x, img/layered-choker-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-                </picture>
-                <p>Layered сhoker</p>
-                <span>$ 115</span>
+                <a href="#">
+                  <picture>
+                    <!-- 1x: 130px; 2x: 260px -->
+                    <source type="image/webp" srcset="img/layered-choker-necklace-mobile.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <!-- 1x: 324px; 2x: 648px -->
+                    <source type="image/webp" srcset="img/layered-choker-necklace-tablet.webp 1x, img/layered-choker-necklace-tablet@2x.webp 2x" media="(max-width: 1023px)">
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+                  </picture>
+                  <p>Layered сhoker</p>
+                  <span>$ 115</span>
+                </a>
               </li>
               <li class="main-new__product-item">
-                <picture>
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-                </picture>
-                <p>Gold chain</p>
-                <span>$ 215</span>
+                <a href="#">
+                  <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+                  </picture>
+                  <p>Gold chain</p>
+                  <span>$ 215</span>
+                </a>
               </li>
               <li class="main-new__product-item">
-                <picture>
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
-                  <!-- 1x: 270px; 2x: 540px -->
-                  <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
-                </picture>
-                <p>Galaxy earrings</p>
-                <span>$ 95</span>
+                <a href="#">
+                  <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                    <!-- 1x: 270px; 2x: 540px -->
+                    <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" width="270" height="284" alt="Ожерелье с аметистом">
+                  </picture>
+                  <p>Galaxy earrings</p>
+                  <span>$ 95</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -271,7 +282,7 @@
           <h2>The good stuff in&nbsp;your inbox</h2>
           <p>News and updates from CH. Nospam, we promise.</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" name="E-mail" id="email" placeholder="Your E-mail">
+            <input type="email" name="E-mail" id="email" placeholder="Your E-mail" required>
             <label class="visually-hidden" for="email"></label>
             <button type="submit">
               <span>Sign Up</span>
@@ -349,7 +360,9 @@
     <section class="modal modal--closed">
       <div class="modal__wrapper">
         <div class="modal__title-wrapper">
-          <button type="button"></button>
+          <button type="button">
+            <span class="visually-hidden">Кнопка закрытия попапа</span>
+          </button>
           <h2>The item was added to&nbsp;your cart</h2>
         </div>
         <div class="modal__count-wrapper">
@@ -368,9 +381,13 @@
             <p>$ 115</p>
           </div>
           <div class="modal__button-wrapper">
-            <button type="button"></button>
+            <button type="button">
+              <span class="visually-hidden">Кнопка увеличения количества товаров в корзине</span>
+            </button>
             <span>1</span>
-            <button type="button"></button>
+            <button type="button">
+              <span class="visually-hidden">Кнопка уменьшения количества товаров в корзине</span>
+            </button>
           </div>
         </div>
         <div class="modal__description-wrapper">
@@ -388,7 +405,9 @@
     <section class="login-modal login-modal--closed">
       <div class="login-modal__wrapper">
         <div class="login-modal__close-button-wrapper">
-          <button type="button"></button>
+          <button type="button">
+            <span class="visually-hidden">Кнопка закрытия окна логина</span>
+          </button>
           <picture>
             <!-- 1x: 270; 2x: 540-->
             <source type="image/webp" srcset="img/login-mobile.webp 1x, img/login-mobile@2x.webp 2x">

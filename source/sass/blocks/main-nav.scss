@@ -13,11 +13,29 @@
   display: none;
 }
 
+.main-nav--login {
+  position: relative;
+  z-index: 200;
+}
+
+.main-nav--cart {
+  position: relative;
+  z-index: 200;
+}
+
+.main-nav--login::after {
+  display: none;
+}
+
+.main-nav--cart::after {
+  display: none;
+}
+
 .main-nav::after {
   content: "";
 
   position: absolute;
-  bottom: 61px;
+  bottom: 34.5%;
   left: 0;
   width: 100%;
   height: 1px;
@@ -68,7 +86,7 @@
 
 .main-nav__form-wrapper button {
   position: absolute;
-  top: -4px;
+  top: 0;
   left: -5px;
   width: 24px;
   height: 24px;
@@ -92,6 +110,7 @@
 }
 
 .main-nav__form-wrapper input {
+  appearance: none;
   padding-left: 29px;
   height: 24px;
   border: none;
@@ -137,6 +156,7 @@
 .main-nav__user-list {
   margin: 0;
   padding: 0;
+  max-width: 120px;
   margin-top: 13px;
   font-family: $poppins;
   font-size: 14px;
@@ -233,7 +253,7 @@
   }
 
   .main-nav--catalog {
-    padding-bottom: 97px;
+    padding-bottom: 96px;
   }
 
   .main-nav::after {
@@ -242,8 +262,8 @@
 
   .main-nav__toggle {
     position: relative;
-    width: 25px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: none;
     align-self: center;
@@ -258,7 +278,7 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     width: 25px;
     height: 2px;
@@ -326,8 +346,8 @@
 
   .main-nav--closed .main-nav__cart-svg {
     display: block;
-    width: 20px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     align-self: center;
   }
 
@@ -339,8 +359,8 @@
     width: 100%;
     left: 0;
     top: 0;
-    position: absolute;
-    min-height: 778px;
+    position: fixed;
+    min-height: 100%;
     padding-left: 5.86%;
     padding-right: 5.86%;
     background-color: #a87b62;
@@ -358,13 +378,19 @@
 
   .main-nav--opened .main-nav__cart-svg {
     order: 3;
+    width: 30px;
+    height: 30px;
+    position: relative;
     display: block;
-    margin-top: 4px;
+    margin-top: 0;
     align-self: center;
   }
 
   .main-nav__cart-svg svg {
     stroke: #1d1613;
+    position: relative;
+    top: 6px;
+    left: 11px;
   }
 
   .main-nav__cart-svg:hover svg {
@@ -438,6 +464,10 @@
     display: block;
   }
 
+  .main-nav__user-list {
+    max-width: 100%;
+  }
+
   .main-nav__user-list li {
     margin: 0;
     margin-bottom: 15px;
@@ -501,7 +531,7 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     width: 25px;
     height: 2px;
@@ -518,8 +548,8 @@
     width: 100%;
     left: 0;
     top: 0;
-    position: relative;
-    min-height: 778px;
+    position: fixed;
+    min-height: 100%;
     padding-left: 5.86%;
     padding-right: 5.86%;
     background-color: #a87b62;
@@ -637,6 +667,10 @@
     height: 52px;
   }
 
+  .main-nav--card::before {
+    display: none;
+  }
+
   .main-nav--opened .main-nav__form-wrapper {
     padding: 0;
     margin-top: 30px;
@@ -655,7 +689,6 @@
   }
 
   .main-nav--opened {
-    min-height: 684px;
     padding-left: 4.69%;
     padding-right: 4.69%;
   }

@@ -5,6 +5,10 @@
   flex: 0 0 auto;
 }
 
+.main-header--cart {
+  background-color: #ffffff;
+}
+
 @media (max-width: $tablet-width-only) {
   .main-header {
     padding-left: 5.86%;

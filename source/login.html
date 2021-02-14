@@ -11,10 +11,21 @@
 </head>
 <body>
   <div class="body-wrapper">
-  <div style="display:none">
-    <include src="build/img/sprite_auto.svg"></include>
+    <div style="display:none">
+      <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <section class="login-modal">
+    <header class="main-header main-header--nojs">
+      <nav class="main-nav main-nav--login">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="login-modal login-modal--login">
       <div class="login-modal__wrapper">
         <div class="login-modal__close-button-wrapper">
           <button type="button"></button>

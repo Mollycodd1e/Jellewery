@@ -136,6 +136,12 @@
   color: #9b9997;
 }
 
+@media (max-width: 1047px) {
+  .product-card__options {
+    margin-top: 3px;
+  }
+}
+
 @media (max-width: $tablet-width-only) {
   .product-card {
     max-width: 768px;
@@ -177,6 +183,11 @@
 
   .product-card__description-wrapper {
     width: 319px;
+    margin-left: 0;
+  }
+
+  .product-card__options {
+    margin-top: 17px;
   }
 
   .product-card__options span {

@@ -8,6 +8,7 @@
     var addToCartButton = document.querySelector('.product-card__description-wrapper a');
     var blackLayer = modal.querySelector('.black-background');
     var bodyPage = document.querySelector('body');
+    var checkoutButton = modal.querySelector('.modal__link-wrapper a:nth-child(2n + 2)');
 
     addToCartButton.href = '#';
 
@@ -32,12 +33,20 @@
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
         bodyPage.classList.add('scroll-hidden');
+        closeButton.focus();
       }
     });
 
     document.addEventListener('keydown', function (evt) {
       if ((evt.key === 'Escape')) {
         modalClosing(modal, bodyPage);
+      }
+    });
+
+    document.addEventListener('keydown', function (evttab) {
+      if ((evttab.key === 'Tab') && (modal.classList.contains('modal--opened')) && (document.activeElement === checkoutButton)) {
+        closeButton.focus();
+        evttab.preventDefault();
       }
     });
   }
@@ -128,15 +137,52 @@
 
     var filterToggle = function (filterSection) {
 
-      filterSection.addEventListener('click', function () {
-        if (filterSection.classList.contains('catalog-filter__wrapper--closed')) {
-          filterSection.classList.remove('catalog-filter__wrapper--closed');
-          filterSection.classList.add('catalog-filter__wrapper--opened');
-        } else {
-          filterSection.classList.remove('catalog-filter__wrapper--opened');
-          filterSection.classList.add('catalog-filter__wrapper--closed');
-        }
-      });
+      var filterToggleButton = filterSection.querySelector('legend');
+      var filterSliderToggle = filterSection.querySelector('p');
+      var filterButton = filterSection.querySelector('button');
+      var filterSliderButton = filterSection.querySelector('button');
+
+      if (filterToggleButton) {
+        filterToggleButton.addEventListener('click', function () {
+          if (filterSection.classList.contains('catalog-filter__wrapper--closed')) {
+            filterSection.classList.remove('catalog-filter__wrapper--closed');
+            filterSection.classList.add('catalog-filter__wrapper--opened');
+          } else {
+            filterSection.classList.remove('catalog-filter__wrapper--opened');
+            filterSection.classList.add('catalog-filter__wrapper--closed');
+          }
+        });
+
+        filterButton.addEventListener('click', function () {
+          if (filterSection.classList.contains('catalog-filter__wrapper--closed')) {
+            filterSection.classList.remove('catalog-filter__wrapper--closed');
+            filterSection.classList.add('catalog-filter__wrapper--opened');
+          } else {
+            filterSection.classList.remove('catalog-filter__wrapper--opened');
+            filterSection.classList.add('catalog-filter__wrapper--closed');
+          }
+        });
+      } else {
+        filterSliderToggle.addEventListener('click', function () {
+          if (filterSection.classList.contains('catalog-filter__wrapper--closed')) {
+            filterSection.classList.remove('catalog-filter__wrapper--closed');
+            filterSection.classList.add('catalog-filter__wrapper--opened');
+          } else {
+            filterSection.classList.remove('catalog-filter__wrapper--opened');
+            filterSection.classList.add('catalog-filter__wrapper--closed');
+          }
+        });
+
+        filterSliderButton.addEventListener('click', function () {
+          if (filterSection.classList.contains('catalog-filter__wrapper--closed')) {
+            filterSection.classList.remove('catalog-filter__wrapper--closed');
+            filterSection.classList.add('catalog-filter__wrapper--opened');
+          } else {
+            filterSection.classList.remove('catalog-filter__wrapper--opened');
+            filterSection.classList.add('catalog-filter__wrapper--closed');
+          }
+        });
+      }
     };
 
     for (var i = 0; i < filterOptions.length; i++) {
@@ -193,6 +239,42 @@
         loginClosing(login, bodyTag);
       }
     });
+
+    document.addEventListener('keydown', function (evttab) {
+      if ((evttab.key === 'Tab') && (login.classList.contains('login-modal--opened')) && (document.activeElement === closeLoginButton)) {
+        mailInput.focus();
+        evttab.preventDefault();
+      }
+    });
+
+    document.addEventListener('keydown', function (evtshift) {
+      if ((evtshift.shiftKey && evtshift.key === 'Tab') && (login.classList.contains('login-modal--opened')) && (document.activeElement === mailInput)) {
+        closeLoginButton.focus();
+        evtshift.preventDefault();
+      }
+    });
+  }
+})();
+
+'use strict';
+
+(function () {
+  var slider = document.querySelector('.main-new');
+
+  if (slider) {
+    var previousSlide = slider.querySelector('.main-new__back-button-wrapper button');
+    var nextSlide = slider.querySelector('.main-new__forward-button-wrapper button');
+    var sliderList = slider.querySelector('.main-new__product-list');
+
+    previousSlide.addEventListener('click', function () {
+      var widthNow = sliderList.offsetWidth;
+      sliderList.style.transform = 'translateX(-' + widthNow + 'px)';
+    });
+
+    nextSlide.addEventListener('click', function () {
+      var widthNow = sliderList.offsetWidth;
+      sliderList.style.transform = 'translateX(' + widthNow + 'px)';
+    });
   }
 })();
 
@@ -204,6 +286,7 @@
   if (navMain) {
     var navToggle = document.querySelector('.main-nav__toggle');
     var header = document.querySelector('.main-header');
+    var bodyPage = document.querySelector('body');
 
     header.classList.remove('main-header--nojs');
     header.classList.remove('main-header--opened');
@@ -216,10 +299,12 @@
         navMain.classList.add('main-nav--opened');
         navMain.classList.remove('main-nav--closed');
         header.classList.add('main-header--opened');
+        bodyPage.classList.add('scroll-hidden');
       } else {
         navMain.classList.remove('main-nav--opened');
         navMain.classList.add('main-nav--closed');
         header.classList.remove('main-header--opened');
+        bodyPage.classList.remove('scroll-hidden');
       }
     });
   }
