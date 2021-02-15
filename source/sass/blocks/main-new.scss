@@ -113,6 +113,7 @@
   padding: 0;
   width: 100%;
   height: 358px;
+  transition: 1s;
   //overflow: hidden;
   display: flex;
   list-style: none;
@@ -231,7 +232,7 @@
   .main-new__product-list {
     height: 405px;
     width: 100%;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
   }
 
   .main-new__product-list p {
@@ -262,7 +263,7 @@
   }
 
   .main-new__product-item {
-    width: 48%;
+    min-width: 48%;
   }
 
   .main-new__wrapper {
