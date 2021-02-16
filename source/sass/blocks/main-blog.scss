@@ -57,7 +57,7 @@
 .main-blog__care-wrapper {
   display: flex;
   width: 570px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .main-blog__date-wrapper {
@@ -159,7 +159,7 @@
   .main-blog__trends-wrapper {
     width: 678px;
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .main-blog__date-wrapper {
@@ -175,6 +175,7 @@
 
   .main-blog__trends-wrapper {
     display: flex;
+    height: 300px;
     margin-bottom: 20px;
   }
 
@@ -208,6 +209,7 @@
 
   .main-blog__trends-wrapper {
     margin-bottom: 20px;
+    height: 512px;
   }
 
   .main-blog__care-wrapper img,
@@ -215,6 +217,7 @@
   .main-blog__trends-wrapper img {
     width: 290px;
     height: 256px;
+    display: block;
   }
 
   .main-blog__date-wrapper {

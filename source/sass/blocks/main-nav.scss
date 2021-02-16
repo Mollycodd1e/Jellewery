@@ -128,8 +128,7 @@
 
 .main-nav__form-wrapper input::placeholder {
   font-family: $poppins;
-  font-size: 14px;
-  line-height: 21px;
+  line-height: normal;
 }
 
 .main-nav__form-wrapper input:hover::placeholder,
