@@ -480,7 +480,7 @@
   }
 }
 
-@media (max-width: 1249px) {
+@media (max-width: 1214px) {
   .catalog-filter__product-item {
     width: 185px;
   }
@@ -777,6 +777,7 @@
   }
 
   .catalog-filter__product-item {
+    width: 206px;
     margin-right: 5px;
     margin-bottom: 36px;
     cursor: pointer;
@@ -787,8 +788,10 @@
   }
 
   .catalog-filter__product-item img {
+    display: block;
     width: 206px;
     height: 208px;
+    margin: 0 auto;
   }
 
   .catalog-filter__page-wrapper {
