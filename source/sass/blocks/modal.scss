@@ -26,11 +26,14 @@
   padding-left: 35px;
   width: 500px;
   min-height: 439px;
-  //margin: 0 auto;
   margin-left: -250px;
   z-index: 100;
   box-sizing: border-box;
   background-color: #ffffff;
+}
+
+.modal--cart .modal__wrapper {
+  bottom: auto;
 }
 
 .modal__wrapper::after {
