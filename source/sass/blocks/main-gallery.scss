@@ -187,16 +187,19 @@
   .main-gallery__first-item img {
     width: 100%;
     height: 130px;
+    object-fit: cover;
   }
 
   .main-gallery__second-item img {
     width: 100%;
     height: 226px;
+    object-fit: cover;
   }
 
   .main-gallery__third-item img {
     width: 100%;
     height: 121px;
+    object-fit: cover;
   }
 
   .main-gallery__fourth-item {
@@ -206,11 +209,13 @@
   .main-gallery__fifth-item img {
     width: 100%;
     height: 87px;
+    object-fit: cover;
   }
 
   .main-gallery__sixth-item img {
     width: 100%;
     height: 115px;
+    object-fit: cover;
   }
 
   .main-gallery__seventh-item {
