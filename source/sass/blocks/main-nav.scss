@@ -692,5 +692,13 @@
   .main-nav--opened {
     padding-left: 4.69%;
     padding-right: 4.69%;
+    min-height: 673px;
+    position: fixed;
+    overflow-y: scroll;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    min-height: 673px;
+    overflow-y: scroll;
   }
 }

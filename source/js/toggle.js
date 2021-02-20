@@ -27,5 +27,11 @@
         bodyPage.classList.remove('scroll-hidden');
       }
     });
+
+    if (navMain.offsetHeight === window.pageYOffset) {
+      navMain.style.position = 'fixed';
+    } else {
+      navMain.style.oveflow = 'visible';
+    }
   }
 })();
